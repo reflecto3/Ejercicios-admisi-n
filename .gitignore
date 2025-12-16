@@ -1,0 +1,67 @@
+# LaTeX intermediate and build files
+# Common aux files
+*.aux
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+
+# latexmk and file lists
+*.fls
+*.fdb_latexmk
+*.run.xml
+
+# SyncTeX
+*.synctex
+*.synctex.gz
+
+# Bibliography and biber/bibtex outputs
+# Many users commit .bbl; uncomment if you want to ignore them instead
+# *.bbl
+*.blg
+
+# Navigation / presentation files (beamer)
+*.nav
+*.snm
+*.vrb
+
+# Index files
+*.idx
+*.ilg
+*.ind
+
+# Device and intermediate files
+*.ps
+*.dvi
+
+# Generated directories (eg. minted / SILE caches)
+_minted-*/
+*.pyg
+
+# Editor temporary / backup files
+*~
+*.bak
+*.swp
+*.swm
+.\.lck
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: ignore final generated PDF and other outputs
+# Uncomment if you do not want to track PDF builds
+# *.pdf
+
+# If you're using latexindent or other formatters, ignore their backup files
+*.bak-indent
+
+# If using Sublime/VSCode or other IDEs, you may also want to add their workspace files
+.vscode/
+*.code-workspace
+
+# NOTE: If files like "main.bbl" are already tracked in git, adding these patterns will not
+# untrack them. To stop tracking a previously committed generated file run:
+#   git rm --cached <file>
+# and commit the change.
