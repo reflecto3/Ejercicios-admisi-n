@@ -7,6 +7,7 @@
 \usepackage[shortlabels]{enumitem}
 \usepackage{alphalph}
 \usepackage{multicol, multirow}
+\usepackage{xpatch}
 \usepackage[
 backend=biber,
 style=authortitle-ibid,
@@ -24,11 +25,25 @@ sorting=ynt
 
 \addbibresource{refs.bib}
 
+\makeatletter
+\xpatchcmd{\questions}
+  {question@\arabic{question}}
+  {question@\arabic{section}@\arabic{subsection}@\arabic{question}}
+  {}{}
+\makeatother
+
+\makeatletter
+\xpatchcmd{\parts}
+  {part@\arabic {question}@\arabic {partno}}
+  {part@\arabic {section}@\arabic {subsection}@\arabic {question}@\arabic {partno}}
+  {}{}
+\makeatother
+
 \let\footnote=\endnote
 \renewcommand{\notesname}{Referencias}
 
 \renewcommand{\thepartno}{\alphalph{\value{partno}}}
-% \renewcommand{\thequestion}{\thesection.\arabic{question}}
+\counterwithin{question}{subsection}
 
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
 
@@ -36,6 +51,8 @@ sorting=ynt
 \theendnotes
 \setcounter{endnote}{0}
 }
+
+\newcommand{\extsol}[1]{{\small\itshape #1}}
 
 \newcommand{\cmdos}{\text{cm}^2}
 \newcommand{\cm}{\text{cm}}
@@ -52,6 +69,9 @@ sorting=ynt
 \begin{document}
 \maketitle
 \thispagestyle{empty}
+
+% \xshowcmd{\questions}
+% \xshowcmd{\parts}
 
 \include{aritmetica}
 
