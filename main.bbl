@@ -1,0 +1,336 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{OLCOMAN1-2021}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=38a3503f6a35f42dd0226748d7ffbf92}{%
+           family={OLCOMA},
+           familyi={O\bibinitperiod},
+           given={Comisión},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{fullhash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{fullhashraw}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{bibnamehash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{authorbibnamehash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{authornamehash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{authorfullhash}{38a3503f6a35f42dd0226748d7ffbf92}
+      \strng{authorfullhashraw}{38a3503f6a35f42dd0226748d7ffbf92}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Primera eliminatoria nacional nivel A}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://olcoma.ac.cr/images/nacional/examant/1elim/1_nivel1_2012_e.pdf
+      \endverb
+      \verb{url}
+      \verb https://olcoma.ac.cr/images/nacional/examant/1elim/1_nivel1_2012_e.pdf
+      \endverb
+    \endentry
+    \entry{SEMA2021}{suppperiodical}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a88a7083fcaf4cbdcb8500e4b018742}{%
+           family={Rojas},
+           familyi={R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Semanario Universidad}%
+      }
+      \strng{namehash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{fullhash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{fullhashraw}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{bibnamehash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{authorbibnamehash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{authornamehash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{authorfullhash}{6fef5844c19de67a90f6dc78842b9649}
+      \strng{authorfullhashraw}{6fef5844c19de67a90f6dc78842b9649}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{Semanario Universidad 2386}
+      \field{month}{9}
+      \field{title}{Explicaciones, Recomendaciones y Práctica. Prueba de Aptitud Académica UCR-UNA 2021}
+      \field{year}{2021}
+    \endentry
+    \entry{SEMA2022}{suppperiodical}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f626a1a50f257666603efa4a232cb384}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4cc302f0bf480ef33e5b17f3d4b4858d}{%
+           family={Córdoba},
+           familyi={C\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Semanario Universidad}%
+      }
+      \strng{namehash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{fullhash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{fullhashraw}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{bibnamehash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{authorbibnamehash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{authornamehash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{authorfullhash}{ff8e54495afb304b67cfbf15fd571257}
+      \strng{authorfullhashraw}{ff8e54495afb304b67cfbf15fd571257}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{Semanario Universidad}
+      \field{month}{8}
+      \field{title}{Prácticas y Consejos para el Examen de Admisión 2022}
+      \field{year}{2022}
+    \endentry
+    \entry{TEC2023}{book}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=e816c48557b4461fdef38b558ed2be70}{%
+           family={Acuña\bibnamedelima Chacón},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d4707c54e60529fabc5f27daaa9e4be}{%
+           family={Agüero\bibnamedelima Calvo},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f9fa91e19582118e74c4709f5320ade}{%
+           family={Blanco\bibnamedelima Leitón},
+           familyi={B\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4a9d3990ac33684fe733dacfb443e2b6}{%
+           family={Godínez\bibnamedelima Rojas},
+           familyi={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={L.P.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto Tecnológico de Costa Rica}%
+      }
+      \strng{namehash}{3cd8a37467449de2f3fc3eac59b8221a}
+      \strng{fullhash}{03816c2778b946646636f6a2bffd8604}
+      \strng{fullhashraw}{03816c2778b946646636f6a2bffd8604}
+      \strng{bibnamehash}{3cd8a37467449de2f3fc3eac59b8221a}
+      \strng{authorbibnamehash}{3cd8a37467449de2f3fc3eac59b8221a}
+      \strng{authornamehash}{3cd8a37467449de2f3fc3eac59b8221a}
+      \strng{authorfullhash}{03816c2778b946646636f6a2bffd8604}
+      \strng{authorfullhashraw}{03816c2778b946646636f6a2bffd8604}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Segunda edición}
+      \field{title}{Cuaderno de ejercicios para la prueba de aptitud académica del TEC}
+      \field{year}{2023}
+    \endentry
+    \entry{60-10preguntas}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd0d4c76a5fc5bbc56d03d4409fa4d36}{%
+           family={Rojas\bibnamedelimb Rojas},
+           familyi={R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Editorial UCR}%
+      }
+      \strng{namehash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{fullhash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{fullhashraw}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{bibnamehash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{authorbibnamehash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{authornamehash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{authorfullhash}{629197c8b661e07ec2c4a103ef6304d7}
+      \strng{authorfullhashraw}{629197c8b661e07ec2c4a103ef6304d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-9968-02-063-3}
+      \field{title}{60 - 10 preguntas y respuestas de práctica para la Prueba de Aptitud Académica}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://editorial.ucr.ac.cr/interes-general/item/2633-60-10-preguntas-y-respuestas-de-pr%C3%A1ctica-para-la-prueba-de-aptitud-acad%C3%A9mica.html
+      \endverb
+      \verb{url}
+      \verb https://editorial.ucr.ac.cr/interes-general/item/2633-60-10-preguntas-y-respuestas-de-pr%C3%A1ctica-para-la-prueba-de-aptitud-acad%C3%A9mica.html
+      \endverb
+    \endentry
+    \entry{24preguntas}{book}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=9ef129d308150f35de4e570fbad6786d}{%
+           family={Calvo\bibnamedelima Díaz},
+           familyi={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ea8971046df66a8df2f62489bda2b0e}{%
+           family={Cerdas\bibnamedelima Núñez},
+           familyi={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8de523f1833616d5ce611606d760e1b0}{%
+           family={Jiménez\bibnamedelima Alfaro},
+           familyi={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d026573cb7726b7395b48de0bc2d5764}{%
+           family={Martínez\bibnamedelima Alpízar},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d5444b2ce1b107cd96beed0b1953ee2}{%
+           family={Ordóñez\bibnamedelima Lacayo},
+           familyi={O\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fd3ce724f7de62f8c8fda6508b9e4db}{%
+           family={Pérez\bibnamedelima Rojas},
+           familyi={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd0d4c76a5fc5bbc56d03d4409fa4d36}{%
+           family={Rojas\bibnamedelima Rojas},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f69c4ce47b443da4b25d319f75b5fd3}{%
+           family={Rojas\bibnamedelima Torres},
+           familyi={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a084c1141f4ff097ff04f0118054f09}{%
+           family={Solano\bibnamedelima Moraga},
+           familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a05e8a2ecb88354f9119487c8f1d1d32}{%
+           family={Valverde\bibnamedelima García},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto de Investigaciones Psicológicas de la Universidad de Costa Rica}%
+      }
+      \strng{namehash}{1de5ef864f509a0133c63086be5582d8}
+      \strng{fullhash}{467ae1add7223f6185cf509239aa6d15}
+      \strng{fullhashraw}{467ae1add7223f6185cf509239aa6d15}
+      \strng{bibnamehash}{1de5ef864f509a0133c63086be5582d8}
+      \strng{authorbibnamehash}{1de5ef864f509a0133c63086be5582d8}
+      \strng{authornamehash}{1de5ef864f509a0133c63086be5582d8}
+      \strng{authorfullhash}{467ae1add7223f6185cf509239aa6d15}
+      \strng{authorfullhashraw}{467ae1add7223f6185cf509239aa6d15}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{24 preguntas de práctica en el 2024 para la Prueba de Aptitud Académica}
+      \field{year}{2024}
+    \endentry
+    \entry{practicaUCR1}{book}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fd0d4c76a5fc5bbc56d03d4409fa4d36}{%
+           family={Rojas\bibnamedelima Rojas},
+           familyi={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6c0dafa9136f563fe62c1cd254d40f97}{%
+           family={Bolaños\bibnamedelimb Valerio},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Instituto de Investigaciones Psicológicas de la Universidad de Costa Rica}%
+      }
+      \strng{namehash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{fullhash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{fullhashraw}{c345a6d1e66c05585720323cc12f8983}
+      \strng{bibnamehash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{authorbibnamehash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{authornamehash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{authorfullhash}{c345a6d1e66c05585720323cc12f8983}
+      \strng{authorfullhashraw}{c345a6d1e66c05585720323cc12f8983}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{title}{Práctica para la Prueba de Aptitud Académica}
+      \verb{urlraw}
+      \verb https://paa.ucr.ac.cr/resources/otros/practica/practica.pdf
+      \endverb
+      \verb{url}
+      \verb https://paa.ucr.ac.cr/resources/otros/practica/practica.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

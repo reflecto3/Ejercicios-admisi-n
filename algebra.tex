@@ -1,0 +1,136 @@
+\section{Métodos para encontrar incógnitas}
+
+\begin{questions}
+\question
+Mirta, Óscar y Gloria son estudiantes
+universitarios. Gloria ganó 50 créditos más que
+Óscar. Óscar ganó el triple de créditos que Mirta.
+
+Si entre los tres han ganado más de 78 créditos
+pero menos de 99, entonces, es posible que\footnote{\cite{SEMA2021}}
+\begin{choices}
+    \choice Mirta haya ganado 7 créditos.
+    \choice Óscar haya ganado 12 créditos.
+    \CorrectChoice Óscar haya ganado 15 créditos. %%%%%%%%%%
+    \choice Gloria haya ganado 59 créditos.
+    \choice Óscar y Mirta juntos hayan ganado 44 créditos
+más que Gloria.
+\end{choices}
+
+\begin{solution}
+    En esta pregunta, nos piden escoger una opción que sea posible. Es decir, el resto serían imposibles. 
+
+    Analicemos y procesemos la información: si designamos por la inicial de su nombre la cantidad de créditos que ganó cada estudiante, tenemos las siguientes relaciones
+    \begin{align*}
+        &g = o + 50 &&\text{Gloria ganó 50 créditos más que Óscar.} \\
+        &o = 3m &&\text{Óscar ganó el triple de créditos que Mirta.} \\
+        &78 < m+o+g < 99 &&\text{Entre los trés ganaron entre 78 y 99 créditos.}
+    \end{align*}
+
+    Con esto, analicemos las opciones:
+    \begin{enumerate}[A.]
+        \item Si $m=7$, entonces por las ecuaciones $o = 3\cdot 7 = 21$ y $g = 21+50 = 71$. Entre los tres por tanto ganaron $m+o+g = 7 + 21+ 71 = 99$. Pero nos dicen que ganaron menos de 99 créditos. Por tanto esta no es posible.
+        \item Si $o=12$, entonces $12=o = 3m$ implica que $m=4$ y $g = o+50 =12+50 = 62$. Suman $m+o+g = 4 + 12 + 62 = 78$. Pero nos dicen que ganaron más de 78 créditos. Esta tampoco es posible.
+        \item Si $o = 15$, $m = o/3 = 15/3 = 5$ y $g = o+50 = 15 + 50 = 65$. De esta forma $m+o+g = 5 + 15 + 65 = 85$ que sí está entre 78 y 99. Por lo tanto, la opción C. es posible, de forma que es la opción correcta.
+        \item Si $g = 59$, $o = g-50 = 9$ y $m = o/3 = 3$. Suman $59+9+3 = 71$ que es menor a 78.
+        \item Si Óscar y Mirta juntos ganaron 44 créditos más que Gloria, en ecuación esto es $o+m=44+g$. Pero como $g = o+50$, podemos sustituir la $g$ para obtener $\cancel o+m = 44+\cancel o+50$ y así $m = 94$. Como Óscar tiene el triple de créditos de Mirna, claramente se pasan de los 99 que tienen entre los 3.
+    \end{enumerate} \hfill $\square$
+
+    {\small\itshape Una forma alternativa de resolver este problema es resolver el sistema para saber en qué rangos podían andar los creditajes de cada estudiante. Como $g = o+50$ y $o = 3m$, sustituyendo $g = 3m + 50$. Así, tenemos que $m+o+g = m + 3m + 3m+50 = 7m+50$. Como $78< m+o+g< 99$,
+    \begin{gather*}
+        78 < 7m+50 < 99 \\
+        78-50 < 7m < 99-50 \\
+        28 < 7m < 49 \\
+        \frac{28}{7} = 4 < m < \frac{49}{7} = 7
+    \end{gather*}
+    Así, $m$ debe estar entre 4 y 7, sin incluirlos. Como $o=3m$, entonces $12 = 3\cdot 4 < o < 21 = 3\cdot 7$. Por último, como $g = o+50$, entonces $12+50 = 62 < g < 21+50 = 71$. Con esto, podemos descartar muy rápidamente la A., la B. y la D. La E. también podemos descartarla, pues como $12 < o < 21$ y $4 < m <7$, entonces $16 < m+o < 28$, que claramenete no puede ser 44 créditos más que $g$.}
+\end{solution}
+
+\question % GPT
+Una profesora tenía 10\,000 gapes y compró 4 cuadernos y 2 lápices para cada una de sus 5 clases. Sabiendo que cada cuaderno cuesta 200 y cada lápiz 100, ¿cuál de las siguientes expresiones representa el dinero restante?
+\begin{choices}
+    \choice $10000 - 20\cdot200 - 10\cdot100$.
+    \choice $10000 - 5(200+100)$.
+    \choice $10000 - 4\cdot200 - 2\cdot100$.
+    \choice $10000 - 5(4\cdot200 - 2\cdot100)$.
+\end{choices}
+
+\question
+En un terreno hay 130 árboles, de los cuales 94 son árboles altos y el resto son medianos. Hay 48 árboles jóvenes y la cuarta parte de los árboles medianos son jóvenes.
+
+¿Cuántos de los árboles altos son viejos?\footnote{\cite{practicaUCR1}}
+\begin{choices}
+    \choice 27
+    \choice 36
+    \choice 55
+    \choice 82
+\end{choices}
+
+\question
+El peso de 2 platos es igual al peso de 3 botellas y el peso de 3 vasos es igual al de 2 botellas.
+
+¿Cuántas botellas se necesitan para tener el peso de 8 platos y 6 vasos?\footnote{\cite{practicaUCR1}}
+\begin{choices}
+    \choice 12
+    \choice 16
+    \choice 21
+    \choice 34
+\end{choices}
+
+\question
+En una fábrica se empacó cierto producto de forma individual. La fábrica utilizó 2 máquinas para realizar este trabajo. La máquina antigua empacó 24 productos cada hora. La máquina nueva empacó 30 productos cada hora. Ayer la máquina antigua comenzó a empacar a las 7:00 a. m. y la máquina nueva comenzó a empacar a las 8:30 a. m.
+
+¿Qué hora era cuando ambas máquinas llevaban la misma cantidad de producto empacado?\footnote{\cite{practicaUCR1}}
+\begin{choices}
+    \choice 9:30 a. m.
+    \choice 11:30 a. m.
+    \choice 2:30 p. m.
+    \choice 3:30 p. m.
+\end{choices}
+
+\question
+Cierto año, Rebeca tenía 20 años y sus dos
+hermanos 6 y 7 años.
+
+¿Cuál es el menor número de años que debe
+transcurrir, a partir de ese año, para que la edad
+de Rebeca llegue a ser menor que la suma de las
+edades que tendrán sus dos hermanos?\footnote{\cite{SEMA2021}}
+\begin{choices}
+    \choice 28
+    \choice 16
+    \choice 9
+    \choice 8 %%%%%%%%
+    \choice 7
+\end{choices}
+
+\question
+En la escuela Aprendamos hay 150 estudiantes, de los cuales 95 son de primer ciclo y el resto de segundo ciclo. Si 70 de los estudiantes son varones y la quinta parte de los estudiantes de segundo ciclo son varones, ¿Cuántos estudiantes de primer ciclo son mujeres? \footnote{\cite{SEMA2021}}
+\begin{choices}
+    \choice 11
+    \choice 36
+    \choice 59
+    \choice 80
+\end{choices}
+
+\question
+Si hace 5 años la persona P tenía el cuádruplo de la edad de la persona Z y dentro de 5 años tendrá el doble de la edad de Z, ¿cuántos años tiene P? \footnote{\cite{TEC2023}}
+\begin{choices}
+    \choice 15
+    \choice 20
+    \choice 25 %%%%%%%%%%%%
+    \choice 30
+\end{choices}
+
+\question La diferencia entre dos números enteros positivos es 48. Si se divide el mayor entre el menor el cociente es 6 y el residuo es 3.
+
+¿Cuál deducción es correcta?
+\begin{choices}
+\choice La suma del número mayor y el número menor da un número impar.
+\choice La suma de los dígitos del número mayor es impar.
+\choice El séxtuplo del cuadrado del número mayor es un número par.
+\choice La suma de las cifras del número menor es par.
+\choice El producto de los dígitos del número mayor es par.
+\end{choices}
+
+\end{questions}

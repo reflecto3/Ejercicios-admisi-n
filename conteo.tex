@@ -1,0 +1,369 @@
+\section{Técnicas de Conteo}
+
+\begin{questions}
+
+\question
+    En una caja se colocan siete tiras de papel.
+En cada una de ellas se ha escrito del 0 al 6 un
+número entero distinto. Se sacan 2 tiras al azar.
+
+¿Cuál es el mayor número de parejas de tiras que
+pueden sacarse tales que la suma de los números
+que las identifican sea 6? \footnote{\cite{SEMA2021}}
+
+\begin{choices}
+    \choice 1
+    \choice 2
+    \CorrectChoice 3 %%%%%%%%
+    \choice 4
+    \choice 6
+\end{choices}
+
+\begin{solution}
+    El 0 tiene que ir con el 6 para que sumen 6, el 1 con el 5, el 2 con el 4. Hasta ahí hay 3 parejas, y note que ninguno de estos podría ir con otra pareja, pues si no sumarían distinto. El único número que queda es el 3. Pero no puede tener pareja, pues tendría que ser él mismo para que $3+3 = 6$. Sin embargo, todas las tiras tienen números distintos, así que esta pareja es imposible. Por lo tanto, el mayor número de parejas que pueden sacarse son 3 parejas. La respuesta correcta es la C.
+
+    Algunos detalles que vale la pena recalcar: aunque nos hablaban de azar, no entró a jugar nada de probabilidad, sino simplemente de ver cómo se podían emparejar los números. Es importante leer bien, para ver por ejemplo que el 3 no puede emparejarse consigo mismo pues todas las tiras tienen enteros distintos. Y por último, darnos cuenta de que como la pareja se saca en simultáneo, es lo mismo la pareja 2,4 que la pareja 4,2, así que solo se cuenta una vez. Si por error las contamos doble, obtendríamos 6 parejas, pero la respuesta sería incorrecta. \hfill $\square$
+\end{solution}
+
+\question
+Rafael debe digitar una contraseña de 6
+dígitos para desbloquear la pantalla de inicio de
+su computadora, pero no recuerda los últimos
+2 dígitos. Lo que recuerda es que al sumar esos
+2 dígitos el resultado es 10 y al multiplicarlos el
+resultado es mayor a 10.
+
+¿Cuántas posibilidades de contraseña tiene
+Rafael para digitar? \footnote{\cite{SEMA2021}}
+\begin{choices}
+    \choice 4
+    \CorrectChoice 7 %%%%%%%%%
+    \choice 9
+    \choice 10
+\end{choices}
+
+\begin{solution}
+    Primero notamos que no importan los primeros cuatro dígitos, pues de esos Rafael sí se acuerda. 
+
+    Para los últimos dos, sabemos que suman 10, luego no puede estar el 0 (no hay otro dígito del 0 al 9 que con 0 sume 10), y las opciones son 19, 28, 37, 46, 55, 64, 73, 82 y 91. Además, al multiplicarlos el resultado es mayor a 10. Esto descarta tanto al 19 como al 91. Por tanto, nos quedan 28, 37, 46, 55, 64, 73 y 82, que son 7 opciones. Note que sí es importante el orden de los dígitos para una contraseña. Por lo tanto la respuesta es la B. \hfill $\square$
+\end{solution}
+
+% Hay que revisar la pregunta
+% \question En una escuela de 200 alumnos hay clubes de Arte, Matemáticas y Fútbol. Se sabe que:
+% \begin{enumerate}[I.]
+%     \item En cada club hay 80 estudiantes, y hay 20 estudiantes que no participan de ninguno.
+%     \item De los que hacen futbol, cuatro quintas partes pertenece además a otro club.
+%     \item De los que entrenan matemáticas, la mitad practica futbol.
+% \end{enumerate}
+% ¿Cuántos estudiantes solo están en club de artes?
+% \begin{choices}
+%     \CorrectChoice 60 %%%
+%     \choice 50
+%     \choice 70
+%     \choice 40
+%     \choice 20
+% \end{choices}
+
+\question
+¿Cuántos productos distintos se pueden obtener al multiplicar dos de los siguientes
+números: 3, 5, 6, 7 y 9 sin repetirlos? \footnote{\cite{TEC2023}}
+
+\begin{choices}
+    \choice 9
+    \CorrectChoice 10 %%%%%%%%%%
+    \choice 20
+    \choice 25
+\end{choices}
+
+\begin{solution}
+    Hagamos una tablita de multiplicar. Como no se repiten, no tomamos en cuenta la diagonal. Además, como contamos productos distintos y la tabla de multiplicar es simétrica respecto a la diagonal (pues a por b es lo mismo que b por a) no los tomamos en cuenta:
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|} \hline
+          & 3 & 5 & 6 & 7 & 9 \\ \hline
+        3 &  & 15 & 18 & 21 & 27 \\ \hline
+        5 &  &  & 30 & 35 & 45 \\ \hline
+        6 &  &  &  & 42 & 54 \\ \hline
+        7 &  &  &  &  & 63 \\ \hline
+        9 &  &  &  &  &  \\ \hline
+    \end{tabular}
+    \end{center}
+    Vemos que de las opciones que quedan todos los productos son distintos. Por tanto, la respuesta correcta es la B., hay 10 productos distintos.
+
+    Si no quisieramos hacer la tabla, podríamos pensar en lo siguiente. Primero, tengo 5 formas de escoger mi primer número, y como no puedo repetir, tengo 4 formas de escoger el segundo. Hasta aquí hay 20 productos. Sin embargo, estoy contando ab y ba como combinaciones distintas, cuando no lo son pues dan lo mismo. Como cada una la estoy contando dos veces, divido entre 2: $5\cdot 4/2 = 20/2 = 10$. El tema es asegurarnos de que no haya productos repetidos dentro de estos 10  \hfill $\square$
+\end{solution}
+
+\question Bryan tiene un restaurante y para el almuerzo ofrece 3 opciones de carbohidrato, 2 de proteína, y 3 de ensalada.
+¿Cuántas formas tiene un cliente de armar su almuerzo?
+\begin{choices}
+    \choice 8
+    \choice 15
+    \choice 18
+    \choice 20 
+    \choice 25
+\end{choices}
+
+\begin{solution}
+    Por cada una de las 3 opciones de carbohidrato, hay 2 de proteína, de forma que hay $3\cdot 2 = 6$ combos de carbohidrato-proteína, y por cada uno de esos hay 3 de ensalada así que en total hay $6\cdot 3$ formas de armar un almuerzo. La respuesta correcta es la C.
+
+    En un diagrama de arbol, si los carbohidratos son A de arroz, Y de yuca y T de tortilla, las proteínas son R de res y P de pollo, y las ensaladas son M de mostaza, G de griega y C de césar, entonces tenemos las siguientes opciones (la idea es simplemente visualizarlo, en el examen basta con hacer el producto y asegurarnos de no estar contando dos veces alguna combinación o permutación):
+    \begin{center}
+    \begin{tikzcd}[row sep=0.1ex, column sep=1em]
+                        &                       & M\ar[r] & ARM \\
+                        & R\ar[ur]\ar[r]\ar[dr] & G\ar[r] & ARG \\
+        A\ar[ur]\ar[dr] &                       & L\ar[r] & ARL \\
+                        & P\ar[r]\ar[dr]\ar[ddr] & M\ar[r] & APM \\
+                        &                       & G\ar[r] & APG \\
+                        &                       & L\ar[r] & APL \\
+    \end{tikzcd}
+    \begin{tikzcd}[row sep=0.1ex, column sep=1em]
+                        &                       & M\ar[r] & YRM \\
+                        & R\ar[ur]\ar[r]\ar[dr] & G\ar[r] & YRG \\
+        Y\ar[ur]\ar[dr] &                       & L\ar[r] & YRL \\
+                        & P\ar[r]\ar[dr]\ar[ddr] & M\ar[r] & YPM \\
+                        &                       & G\ar[r] & YPG \\
+                        &                       & L\ar[r] & YPL \\
+    \end{tikzcd}
+    \begin{tikzcd}[row sep=0.1ex, column sep=1em]
+                        &                       & M\ar[r] & TRM \\
+                        & R\ar[ur]\ar[r]\ar[dr] & G\ar[r] & TRG \\
+        T\ar[ur]\ar[dr] &                       & L\ar[r] & TRL \\
+                        & P\ar[r]\ar[dr]\ar[ddr] & M\ar[r] & TPM \\
+                        &                       & G\ar[r] & TPG \\
+                        &                       & L\ar[r] & TPL \\
+    \end{tikzcd} 
+    \end{center} \hfill $\square$
+\end{solution}
+
+\question
+¿Cuántos diferentes ordenamientos de cuatro letras se pueden hacer con M, S, R, A, O de modo que cada uno comience en S y termine en A? \footnote{\cite{TEC2023}}
+\begin{choices}
+    \choice 9
+    \choice 10
+    \choice 20
+    \choice 25 %%%%%%%%%%%
+\end{choices}
+
+\begin{solution}
+    Importante, note que no nos dice que no se puedan repetir letras. Además, sí importa el orden de las letras cuando nos hablan de ordenamientos (o de palabras); SMRA es distinta de SRMA. La primera ya está fija, es S. Para la última, nos dicen que debe ser A, pero tanto la segunda como la tercera puede ser cualquiera de las cinco. Esto podemos resumirlo en un diagramita como este:
+
+    \begin{center}
+    \begin{tabular}{ccccc}
+        \underline{ 1 } & \underline{ 5 } & \underline{ 5 } & \underline{ 1 } & $= 25$ \\
+        S & M & M & A  \\
+          & S & S &   \\
+          & R & R &   \\
+          & A & A &   \\
+          & O & O &   \\
+    \end{tabular}
+    \end{center}
+    Y el producto de la cantidad de opciones es el número de escogencias que tenemos. De nuevo para visualizar podemos hacer una tabla $5\times 5$, donde la columna es la segunda letra y la fila es la tercera letra:
+
+    \begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|} \hline
+          & M & S & R & A & 0 \\ \hline
+        M & SMMA & SSMA & SRMA & SAMA & S0MA \\ \hline
+        S & SMSA & SSSA & SRSA & SASA & S0SA \\ \hline
+        R & SMRA & SSRA & SRRA & SARA & S0RA \\ \hline
+        A & SMAA & SSAA & SRAA & SAAA & S0AA \\ \hline
+        O & SMOA & SSOA & SROA & SAOA & S0OA \\ \hline
+    \end{tabular}
+    \end{center} \hfill $\square$
+\end{solution}
+
+\question
+¿Cuántos números de cuatro cifras se pueden formar de manera que el dígito de las
+unidades sea 0 y los otros sean tres dígitos del 1 al 7, distintos entre sí?\footnote{\cite{TEC2023}}
+\begin{choices}
+    \choice 18
+    \choice 120
+    \CorrectChoice 210 %%%%%%%%%%%%
+    \choice 343
+\end{choices}
+
+\begin{solution}
+    Lo hacemos como el anterior; notamos que sí importa el orden, pues por ejemplo 1230 es distinto de 3210:
+    \begin{center}
+    \begin{tabular}{ccccc}
+        \underline{ 7 } & \underline{ 6 } & \underline{ 5 } & \underline{ 1 } & $= 7\cdot6\cdot 5 = 42\cdot5 = 210$ \\
+        1 & 1          & 1          & 0 \\
+        2 & 2          & 2          &   \\
+        3 & 3          & 3          &   \\
+        4 & 4          & 4          &   \\
+        5 & $\cancel5$ & $\cancel5$ &   \\
+        6 & 6          & 6          &   \\
+        7 & 7          & $\cancel7$ &   \\
+    \end{tabular}
+    \end{center}
+    Donde los números cruzados simplemente son ejemplos, nos sirven para recordar que una vez que escogimos el primer dígito, no podemos volver a usar ese, por lo que se reducen en 1 las opciones para el siguiente. En la práctica uno no muestra las opciones, simplemente dice ``para el primer dígito tengo 7 opciones, para el segundo tengo 6 pues debe ser distinto al primero, y similarmente para el tercero tengo 5 opciones. Para el último dígito me dicen que debe ser el 0, solo hay una opción. Por lo tanto, el total de escogencias es $7\cdot6\cdot5 = 210$''. La opción correcta es la C.  \hfill $\square$
+\end{solution}
+
+\question
+¿Cuántos números de tres cifras se pueden formar utilizando solamente el 1 y el 7? \footnote{\cite{TEC2023}}
+\begin{choices}
+    \choice 5
+    \choice 6
+    \choice 7 
+    \choice 8 %%%%%%%%%%%%
+\end{choices}
+
+\begin{solution}
+    En este caso, podemos repetir dígitos (no nos dicen lo contrario) y sí es importante el orden: 117 es distinto de 171. Tenemos dos opciones por dígito:
+    \begin{center}
+    \begin{tabular}{cccc}
+        \underline{ 2 } & \underline{ 2 } & \underline{ 2 } & $= 2^3 = 8$ \\
+        1 & 1 & 1 \\
+        7 & 7 & 7 \\
+    \end{tabular}
+    \end{center}
+    Por tanto la opción correcta es la D., hay 8 números con estas características. \hfill $\square$
+\end{solution}
+
+\question
+De un grupo de 7 estudiantes, se deben seleccionar 3 para formar una comisión estudiantil. ¿De cuántas formas distintas se puede hacer esta selección?
+\begin{choices}
+    \choice 18
+    \CorrectChoice 35
+    \choice 56
+    \choice 210
+\end{choices}
+
+\begin{solution}
+    Este es un caso interesante. No nos están diciendo que hayan rangos en la comisión estudiantil, al menos no a la hora de escogerla. Por tanto, es lo mismo escoger a los estudiantes Ana, Beto y Carlos, que a Beto, Carlos y Ana. ¡Son los mismos tres, es la misma comisión! Por lo tanto, hemos de tener cuidado con contar varias veces la misma comisión. 
+
+    Para resolver este problema, lo que hacemos es imaginar que sí importara el orden. Es decir, vamos a contar varias veces cada comisión, pero luego vamos a dividir por el número de veces que estamos contando una misma comisión.
+
+    Lo que sí es evidente es que las tres personas de la comisión son distintos. Así para la primera persona hay 7 opciones, para la segunda hay 6 y para la tercera hay 5:
+    \begin{center}
+    \begin{tabular}{cccc}
+        \underline{ 7 } & \underline{ 6 } & \underline{ 5 } & $= 7\cdot6\cdot5 = 210$ \\
+    \end{tabular}
+    \end{center}
+
+    De momento tenemos contadas 210 comisiones. Tomemos una, digamos que es la que dijimos: Ana, Beto y Carlos, ABC. ¿Cuántas veces la estamos contando? Estamos contándola una vez por cada ordenamiento, por cada permutación distinta de los tres estudiantes que hagamos. Hay seis: ABC, ACB, BAC, BCA, CAB, CBA, que vienen de pensar: pude haber escogido cualquiera de los tres de primero, y luego quedan dos opciones para escoger el segundo (el tercero queda definido pues solo queda una opción):
+    \begin{center}
+    \begin{tabular}{cccc}
+        \underline{ 3 } & \underline{ 2 } & \underline{ 1 } & $= 3! = 6$ \\
+    \end{tabular}
+    \end{center}
+
+    Aquí, $3!$ (tres factorial) es el producto de todos los números del 1 al 3. 
+    
+    Vemos entonces que cada comisión la estamos contando 6 veces. Así, dividimos 210 entre 6 para obtener el número de comisiones distintas que podemos escoger: $210/6 = 105/3 = 35$ comisiones. La opción correcta es la B.
+
+    Este es el número de combinaciones (cuando hablamos de combinación no importa el orden) de 3 objetos tomados de un grupo de 7. Otra forma de decirlo: es la cantidad de escogencias de 3 objetos de un grupo de 7. Se le llama comunmente ``7 escoge 3'' y se le denota por $\displaystyle\binom{7}{3}$ (note que no hay una barra entre el 7 y el 3. No hay que confundirlo con una fracción). \hfill $\square$
+\end{solution}
+
+\question De un grupo de 5 candidatos en un programa de cocina, un chef va a escoger 3 que pasan a la siguiente ronda. ¿De cuántas formas distintas puede escoger el juez a los tres afortunados?
+
+\begin{choices}
+    \choice De 6 formas.
+    \choice De 8 formas.
+    \choice De 10 formas.
+    \choice De 12 formas.
+\end{choices}
+
+\begin{solution}
+    Digamos que los siete estudiantes son A, B, C, D, E, F y G. Vamos escogiendo la comisión un estudiante a la vez. Para escoger el primero, tenemos 7 opciones. Luego, para escoger al segundo tenemos 6 opciones, pues podemos escoger cualquiera de los que no hemos escogido aún, y de forma similar para escoger al tercero nos quedan 5 opciones. Hasta el momento, ¿cuántos escenarios tenemos? Por ejemplo, pensemos en el caso donde escogimos a A de primero. Entonces, para escoger el segundo, podría ser B, C, D, E, F o G, es decir, tenemos las parejas AB, AC, AD, AF, AE y AG. Y luego, para cada una de estas parejas tenemos 5 opciones para agregar en el último lugar, por lo que tendríamos
+    \begin{tabular}{|c|c|c|c|c|c|c|} \hline
+         & AB  & AC  & AD  & AE  & AF  & AG  \\ \hline 
+      +B & --- & ACB & ADB & AEB & AFB & AGB \\ \hline
+      +C & ABC & --- & ADC & AEC & AFC & AGC \\ \hline
+      +D & ABD & ACD & --- & AED & AFD & AGD \\ \hline
+      +E & ABE & ACE & ADE & --- & AFE & AGE \\ \hline
+      +F & ABF & ACF & ADF & AEF & --- & AGF \\ \hline
+      +G & ABG & ACG & ADG & AEG & AFG & --- \\ \hline
+    \end{tabular}
+    Note que las de la diagonal no se pueden porque ya el estudiante que queremos agregar fue escogido. Así para cada una de las 6 parejas tenemos 5 opciones que podemos agregar, lo que nos da 30 opciones totales que inician con A. Luego, como el resto se hacen de la misma manera, tenemos 30 para A, 30 para B, etc. así para cada posible estudiante de inicio. Como hay 7, el total de opciones sería de $7\cdot 30 =210$. Hicimos uso de la regla del producto. Hay 7 opciones para el primero, luego 6 para el segundo y luego 5 para el tercero, es decir hay $7\cdot5\cdot6 = 210$ opciones.
+    
+    ¡No tan rápido! Cuando hacemos estos problemas necesitamos tener cuidado. ¿Y si estamos contando un mismo comité varias veces? En efecto, notemos que los comités ABC, ACB, BAC, BCA, CAB y CBA son el mismo, por ejemplo, pero - de forma erronea - contamos cada uno porque el orden es distinto. Pero para solucionar esto, podemos preguntarnos, un mismo comité, ¿de cuantas formas podemos ordenarlo? Justamente como el anterior, de 6 maneras, pues podemos escoger cualquiera de los tres miembros de primero, luego quedan 2 para el segundo lugar y el que queda queda de último, es decir $3\cdot2\cdot1=6$ opciones. Como cada comité lo estamos contando un total de 6 veces, para encontrar cuantos comités distintos hay, dividimos $210/6 = 35$. Hay $35$ comités distintos. \hfill $\square$
+\end{solution}
+
+    
+\question
+¿Cuántas palabras diferentes de 4 letras se pueden formar usando las letras A, B, C, D, E, si ninguna letra se repite?
+\begin{solution}
+    Como hablamos de palabras, aquí sí que importa el orden. Para la primera letra tenemos 5 opciones, y como no podemos repetir, en cada letra sucesiva tenemos una opción menos:
+    \begin{center}
+    \begin{tabular}{ccccc}
+        \underline{ 5 } & \underline{ 4 } & \underline{ 3 } & \underline{ 2 }  & $= 5\cdot4\cdot3\cdot 2 = 10\cdot12 = 120$ \\
+    \end{tabular}
+    \end{center}
+    Por tanto, tenemos \textbf{120 palabras distintas} de 4 letras usando A,B,C,D y E sin repetir letras. \hfill $\square$
+\end{solution}
+
+\question
+En una heladería, un cliente puede pedir su helado en una de dos formas distintas:
+
+\begin{itemize}
+    \item En vaso pequeño, mediano o grande (3 opciones), eligiendo 1 o 2 bolas de helado.
+    \item O en cono normal o azucarado (2 opciones), también eligiendo 1 o 2 bolas de helado.
+\end{itemize}
+
+En ambos casos, puede escoger los sabores de entre 7 disponibles, y si elige 2 bolas, los sabores deben ser iguales.
+
+¿Cuántas formas distintas hay de pedir un helado?
+
+\begin{solution}
+    Tenemos 5 formas de elegir la presentación. Puede ser en vaso pequeño mediano o grande, o en cono normal o azucarado. Luego, hay dos opciones en cantidad de bolas de helado, 1 o 2, y para cada una de estas escogencias debe escoger entre 7 sabores (importante que si escoge dos bolas de helado deba igual escoger el mismo sabor. Si no, hay que hacer dos casos distintos). Por tanto, tenemos
+    \begin{center}
+    \begin{tabular}{cccc}
+        \underline{ 5 presentaciones } & \underline{ 2 cantidades de helado } & \underline{ 7 sabores } & $= 5\cdot2\cdot7 = 70$ combinaciones \\
+    \end{tabular}
+    \end{center} \hfill $\square$
+\end{solution}
+
+\question
+En la heladería del frente, sólo ofrecen helado en cono: ya sea normal o azucarado. Sin embargo, permiten 1, 2 o 3 bolas de helado, y aunque solo tienen 5 sabores, sí permiten combinarlos, y en el orden en el que usted prefiera. ¿Cuántas formas hay de pedir en esta heladería?
+
+\begin{solution}
+    En este caso se vuelve más complejo, pues claramente si eligimos 3 bolas de helado hay muchas más opciones que si elegimos 2 o 1. Por tanto. Lo hacemos por casos:
+    \begin{enumerate}
+        \item Si escogemos una bola de helado, tenemos 2 opciones para el cono y 5 opciones para el sabor. En total, 10 opciones.
+        \item Si escogemos 2 bolas de helado, tenemos 2 opciones para el cono, y 5 opciones de sabor para cada bola, pues se pueden repetir. Además, como nosotros escogemos el orden de los sabores, es distinto pedir chocolate fresa que fresa chocolate. Así, en total hay $2 \cdot 5 \cdot 5 = 50$ formas de escoger un helado pidiendo 2 bolas.
+        \item Similar al anterior, si escogemos 3 bolas de helado, tenemos 2 opciones para el cono y 5 sabores a escoger por cada bola. Un total de $2 \cdot 5^3 = 2\cdot125 = 250$ opciones en este caso.
+    \end{enumerate}
+
+    Por lo tanto, en total tenemos $10 + 50 + 250 = 310$ formas de escoger un helado en este local. Note que al final sumamos las opciones pues son excluyentes. Si usted pidió 2 bolas no puede pedir 3 al mismo tiempo, así que no se mezclan los distintos casos. \hfill $\square$
+\end{solution}
+
+\question ¿Cuántos números impares de cuatro cifras se pueden construir con los dígitos $0, 1, 2, 4, 5, 7$?
+\begin{choices}
+    \choice 540
+    \choice 600
+    \CorrectChoice 648
+    \choice 729
+\end{choices}
+
+\begin{solution}
+    Primero, tres observaciones:
+    \begin{itemize}
+        \item Los dígitos se pueden repetir.
+        \item El último dígito debe ser impar: 1, 5 o 7.
+        \item Los números no pueden iniciar en 0. Un número como 0312 es de tres cifras, no de cuatro.
+    \end{itemize}
+    Con esto, contemos nuestras opciones:
+    \begin{center}
+    \begin{tabular}{ccccc}
+        \underline{ 5 } & \underline{ 6 } & \underline{ 6 } & \underline{ 3 } & $= 5\cdot6\cdot 6\cdot3 = 30 \cdot 18 = 540$ \\
+        1 & 0 & 0 & 1 \\
+        2 & 1 & 1 & 5 \\
+        4 & 2 & 2 & 7 \\
+        5 & 4 & 4 &   \\
+        7 & 5 & 5 &   \\
+          & 7 & 7 &   \\
+    \end{tabular}
+    \end{center}
+    La respuesta correcta es la A. \hfill $\square$
+\end{solution}
+
+\question Una caja tiene 18 bolas, 8 son rojas y las otras verdes. Si se saca una bola al azar, la probabilidad de que esa bola sea verde es\footnote{\cite{OLCOMAN1-2021}}
+\begin{choices}
+    \choice $\dfrac{4}{9}$
+    \choice $\dfrac{5}{9}$
+    \choice $\dfrac{9}{4}$
+    \choice $\dfrac{9}{4}$
+\end{choices}
+
+
+
+\end{questions}

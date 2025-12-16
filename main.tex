@@ -1,0 +1,74 @@
+\documentclass[answers]{exam}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage[spanish, es-lcroman]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage[shortlabels]{enumitem}
+\usepackage{alphalph}
+\usepackage{multicol, multirow}
+\usepackage[
+backend=biber,
+style=authortitle-ibid,
+sorting=ynt
+]{biblatex}
+\usepackage{endnotes}
+\usepackage{cancel}
+\usepackage{tikz}
+
+\usetikzlibrary{babel}
+\usetikzlibrary{cd}
+
+\pagestyle{plain}
+\setcounter{page}{0}
+
+\addbibresource{refs.bib}
+
+\let\footnote=\endnote
+\renewcommand{\notesname}{Referencias}
+
+\renewcommand{\thepartno}{\alphalph{\value{partno}}}
+% \renewcommand{\thequestion}{\thesection.\arabic{question}}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+\newcommand{\printnotes}{
+\theendnotes
+\setcounter{endnote}{0}
+}
+
+\newcommand{\cmdos}{\text{cm}^2}
+\newcommand{\cm}{\text{cm}}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+
+\title{Curso de Habilidades Matemáticas para el Examen de Admisión \\[3ex] Listas de ejercicios \\[3ex] Primera edición}
+\author{TC-732}
+\date{2025}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\include{aritmetica}
+
+\include{logica}
+
+\include{sucesiones}
+
+\include{teoriadenumeros}
+
+\include{razones}
+
+\include{algebra}
+
+\include{conteo}
+
+\include{geometria}
+
+\printbibliography[title={Bibliografía}]
+
+\end{document}
