@@ -47,13 +47,33 @@ más que Gloria.
 \end{solution}
 
 \question % GPT
-Una profesora tenía 10\,000 gapes y compró 4 cuadernos y 2 lápices para cada una de sus 5 clases. Sabiendo que cada cuaderno cuesta 200 y cada lápiz 100, ¿cuál de las siguientes expresiones representa el dinero restante?
+Una profesora tenía $10\,000$ gapes y compró 4 cuadernos y 2 lápices para cada una de sus 5 clases. Sabiendo que cada cuaderno cuesta 200 y cada lápiz 100, ¿cuál de las siguientes expresiones representa el dinero restante?
 \begin{choices}
-    \choice $10000 - 20\cdot200 - 10\cdot100$.
+    \CorrectChoice $10000 - 20\cdot200 - 10\cdot100$.
     \choice $10000 - 5(200+100)$.
     \choice $10000 - 4\cdot200 - 2\cdot100$.
     \choice $10000 - 5(4\cdot200 - 2\cdot100)$.
 \end{choices}
+
+\begin{solution}
+    Las opciones de respuesta son operaciones combinadas que no han sido calculadas. Por tanto, no vamos a calcular el resultado, sino que vamos a intentar plantear cómo llegaríamos a la respuesta y ver si alguna de las opciones coincide.
+
+    Hay 5 clases y para cada una compra 4 cuadernos y 2 lápices. Esto nos habla de una multiplicación. Además, cada cuaderno cuesta 200 y cada lápiz 100. Por tanto, para una sola clase va a gastar $4 \cdot 200$ en cuadernos y $2\cdot 100$ en lápices. Sumando ambas, obtenemos que comprando para una sola clase invierte $4\cdot 200+2\cdot 100$. Como son 5 clases, en total va a gastar $5\cdot(4\cdot 200+2\cdot 100)$ gaoes.
+
+    Nos preguntan cuánto dinero le queda a la profesora después de realizar la compra. Como inició con 10\,000 gapes, después de la compra le quedan
+    \[
+    10000 - 5\cdot(4\cdot 200 + 2\cdot 100)
+    \]
+    gapes. Esto no coincide con ninguna de las opciones de momento. Podríamos pensar que con la D., pero cuidado, pues hay una resta en lugar de una suma dentro del paréntesis. Podemos distribuir el 5 dentro del paréntesis: $5\cdot(4\cdot 200+2\cdot 100) = 5\cdot4\cdot 200+ 5\cdot 2\cdot 100$ y multiplicar el 5 y el 4 en un sumando, y el 5 y el 2 en el otro. Esto es como decir: son 4 cuadernos y 2 lápices por clase y 5 clases, luego en total hay 20 cuadernos y 10 lápices, y la profesora gasta en total $20 \cdot 200 + 10 \cdot 100$. Por lo tanto, le quedan
+    \[
+    10000 - (20\cdot200 + 10\cdot100)
+    \]
+    Note los paréntesis, pues primero sumamos lo que está gastando la profesora para después quitárselo a la cantidad de dinero original. Podemos distribuir el menos: es decir, primero quitamos $20\cdot 200$ y después quitamos los $10 \cdot 100$ que faltan:
+    \[
+    10000 - 20\cdot200 - 10\cdot 100
+    \]
+    Por lo tanto, la respuesta correcta es la A.
+\end{solution}
 
 \question
 En un terreno hay 130 árboles, de los cuales 94 son árboles altos y el resto son medianos. Hay 48 árboles jóvenes y la cuarta parte de los árboles medianos son jóvenes.
@@ -62,9 +82,21 @@ En un terreno hay 130 árboles, de los cuales 94 son árboles altos y el resto s
 \begin{choices}
     \choice 27
     \choice 36
-    \choice 55
+    \CorrectChoice 55
     \choice 82
 \end{choices}
+
+\begin{solution}
+    Estamos clasificando los árboles según dos criterios: en altos y medianos por un lado, y en jóvenes y viejos por otro. Es natural hacer una tabla y completar algunos datos que ya nos dan: como hay 130 árboles y 94 son altos, entonces $130-94 = 36$ son medianos. Además, hay 48 jóvenes y por tanto $130-48 = 82$ viejos. La cuarta parte de los árboles medianos son jóvenes. Esto nos permite calcular el resto:
+    \begin{center}
+        \begin{tabular}{|c|c|c|} \hline
+            Árboles (130) & Altos (94) & Medianos (36) \\ \hline
+            Jóvenes (48) &   $X$    &   $36/4 = 9$    \\ \hline
+            Viejos (82) &   $Z$    &    $Y$           \\ \hline
+        \end{tabular}
+    \end{center}
+    Como la cantidad de árboles jóvenes es de 48, y 9 de esos son medianos, entonces hay $X = 48-9 = 39$ árboles jóvenes altos. Por último, como hay 94 árboles altos, de los cuales 39 son jóvenes, deben haber $94-39=55$ árboles altos viejos. Podemos verificar nuestra respuesta: Como hay 36 medianos de los cuales 9 son jóvenes, debe haber $36-9 = 27$ medianos viejos. Y como hay 82 \'arboles viejos de los cuales 27 son medianos, debe haber $82-27=55$ árboles viejos altos. Basta con hacerlo de una de las formas. Hacer las dos nos da una mayor confianza de no haber cometido un error. Por lo tanto, la respuesta correcta es la C.
+\end{solution}
 
 \question
 El peso de 2 platos es igual al peso de 3 botellas y el peso de 3 vasos es igual al de 2 botellas.
@@ -72,21 +104,50 @@ El peso de 2 platos es igual al peso de 3 botellas y el peso de 3 vasos es igual
 ¿Cuántas botellas se necesitan para tener el peso de 8 platos y 6 vasos?\footnote{\cite{practicaUCR1}}
 \begin{choices}
     \choice 12
-    \choice 16
+    \CorrectChoice 16
     \choice 21
     \choice 34
 \end{choices}
 
+\begin{solution}
+    Este tipo de problemas salió anteriormente cuando hablamos de razones y proporciones. Sin embargo, podemos ver una forma de hacerlo con ecuaciones también. Si $p$ es el peso de un plato, $b$ el de una botella y $v$ el de un vaso, el problema nos dice que 
+    \begin{align*}
+        2p &= 3b \\
+        3v &= 2b
+    \end{align*}
+    Nos piden la cantidad de botellas que nos permitan equilibrar 8 platos y 6 vasos. De las ecuaciones anteriores, $p = \frac{3}{2}b$ y $v = \frac{2}{3}b$. Por lo tanto
+    \[
+    8p+6v = \cancelto{4}{8}\cdot\frac{3}{\cancel 2}b + \cancelto{2}{6}\cdot\frac{2}{\cancel 3}b = 4\cdot3b + 2\cdot2b = 12b + 4b = 16b 
+    \]
+    Por lo tanto, el peso de 16 botellas equivale al peso de 8 platos y 6 vasos. La respuesta correcta es la B.
+\end{solution}
+
 \question
 En una fábrica se empacó cierto producto de forma individual. La fábrica utilizó 2 máquinas para realizar este trabajo. La máquina antigua empacó 24 productos cada hora. La máquina nueva empacó 30 productos cada hora. Ayer la máquina antigua comenzó a empacar a las 7:00 a. m. y la máquina nueva comenzó a empacar a las 8:30 a. m.
 
-¿Qué hora era cuando ambas máquinas llevaban la misma cantidad de producto empacado?\footnote{\cite{practicaUCR1}}
+¿Qué hora era cuando ambas máquinas llevaban la misma cantidad de producto empacado? \textit{Intente resolver el problema utilizando ecuaciones.}\footnote{\cite{practicaUCR1}}
 \begin{choices}
     \choice 9:30 a. m.
     \choice 11:30 a. m.
-    \choice 2:30 p. m.
+    \CorrectChoice 2:30 p. m.
     \choice 3:30 p. m.
 \end{choices}
+
+\begin{solution}
+    Este problema lo vimos en la primera lista. Sin embargo, vale la pena verlo de nuevo, y esta vez resolverlo con ecuaciones.
+
+    Digamos que $h$ es la cantidad de horas que han pasado desde las 8:30 am cuando ambas máquinas llevan la misma cantidad de producto empacado. Tenemos por tanto que han pasado $h+1.5$ horas desde las 7 am y por tanto la máquina antigua ha empacado $24\cdot(h+1.5)$ productos. Por su parte, la máquina nueva ha empacado 30 por hora desde las 8, así que ha empacado $30h$ productos. Como estas cantidades deben ser iguales, resolvemos 
+    \begin{align*}
+        24(h+1.5) &=30h \\
+        24\cdot h + 24\cdot 1.5 &= 30 h \\
+        36 &= 30h-24h \\
+        36 &= 6h \\
+        \frac{36}{6} &= h \\
+        6 &= h.
+    \end{align*}
+
+    Así, es 6 horas después de las 8:30 am, a las 2:30 pm, que ambas máquinas llevan la misma cantidad de producto empacado. La opción correcta es la C. \hfill $\square$
+\end{solution}
 
 \question
 Cierto año, Rebeca tenía 20 años y sus dos
@@ -104,23 +165,62 @@ edades que tendrán sus dos hermanos?\footnote{\cite{SEMA2021}}
     \choice 7
 \end{choices}
 
+\begin{solution}
+    Cuando han pasado $x$ años, Rebeca tiene $20+x$ años y sus hermanos $6+x$ y $7+x$ años, cuya suma es $13+2x$. Queremos saber el $x$ más pequeño tal que $20+x < 13+2x$. Pasando a restar el 13 a la izquierda y el $x$ a la derecha, tenemos $7 < x$. Es decir, deben transcurrir 8 años como mínimo para que la edad de Rebeca (que sería 28) sea menor a la suma de las edades de sus hermanos (14 y 15, cuya suma es 29).
+\end{solution}
+
 \question
 En la escuela Aprendamos hay 150 estudiantes, de los cuales 95 son de primer ciclo y el resto de segundo ciclo. Si 70 de los estudiantes son varones y la quinta parte de los estudiantes de segundo ciclo son varones, ¿Cuántos estudiantes de primer ciclo son mujeres? \footnote{\cite{SEMA2021}}
 \begin{choices}
     \choice 11
-    \choice 36
+    \CorrectChoice 36
     \choice 59
     \choice 80
 \end{choices}
+
+\begin{solution}
+    Este es como el de los árboles que estaba más arriba. Ahora, tenemos 150 estudiantes. 95 son de primer ciclo y $150-95= 55$ son de segundo. 70 son varones, luego $150-70=80$ son mujeres. La quinta parte de los estudiantes de segundo ciclo son varones, esto es $55/5 = 11$. Hay 11 varones en segundo ciclo, de forma que el resto $55-11 = 44$ son mujeres. Como hay en total 80 mujeres y 44 están en segundo ciclo, entonces el resto, que serían $80-44=36$ están en primer ciclo. Así, hay 36 estudiantes de primer ciclo mujeres y la respuesta correcta es la B.
+    \begin{center}
+        \begin{tabular}{|c|c|c|} \hline
+            Estudiantes (150)  & Varones (70) & Mujeres (80) \\ \hline
+            Primer ciclo (95)  &   59         &   $\boxed{36}$         \\ \hline
+            Segundo ciclo (55) &   11         &   44         \\ \hline
+        \end{tabular}
+    \end{center}\hfill $\square$
+\end{solution}
 
 \question
 Si hace 5 años la persona P tenía el cuádruplo de la edad de la persona Z y dentro de 5 años tendrá el doble de la edad de Z, ¿cuántos años tiene P? \footnote{\cite{TEC2023}}
 \begin{choices}
     \choice 15
     \choice 20
-    \choice 25 %%%%%%%%%%%%
+    \CorrectChoice 25 %%%%%%%%%%%%
     \choice 30
 \end{choices}
+
+\begin{solution}
+    Podemos revisar las opciones. 
+    \begin{enumerate}[A.]
+        \item Si P tiene 15 años, hace 5 años tenía 10 y Z por tanto tenía $10/4 = 2.5$. En 5 años P tendrá 20 años y por tanto Z tendrá 10, la mitad. Pero no coinciden. Si hace 5 años Z tenía 2.5 años, ahora tiene 7.5, pero entonces en 5 años tendrá 12.5, no 10. Así esta no puede ser.
+        \item Si P tiene 20, hace 5 tenía 15 y por tanto Z tenía 3.75, la cuarta parte, de forma que actualmente tiene 8.75. Pero entonces en 5 años P tendrá 25 y Z tendrá 13.75, que no es la mitad de 25. Esta no puede ser correcta.
+        \item Si P tiene 25 años, hace 5 tenía 20, cuya cuarta parte es 5, la edad de Z en ese momento. Así, Z actualmente tiene 10 años, y en 5 años tendrá 15, mientras P tendrá 30, que es el doble. Así, esta opción sí coincide y por tanto tiene que ser la correcta. 
+        \item Si P tiene 30, hace 5 tenía 25, cuya cuarta parte es 6.25. Así Z tiene actualmente $6.25+5 = 11.25$ y en 5 años tendrá $16.25$. Pero esta no es la mitad de 35, la edad de P en 5 años. Esta no puede ser.
+    \end{enumerate}
+
+    {\small\itshape 
+    Veamos el método directo de obtener la edad de P con ecuaciones. Si $p$ es la edad de P y $z$ la edad de Z, entonces hace 5 años $p$ tenía $p-5$ años y Z tenía $z-5$ años. Como P tenía el cuádruplo de la edad de Z, entonces $p-5 = 4(z-5)$. Resolviendo esta ecuación obtenemos. De la misma forma, como en 5 años P tendrá $p+5$ años y el doble de la edad de Z, entonces $p+5 = 2(z+5)$ (pues Z tendrá $z+5$ años). Despejando la $p$ en la primera ecuación obtenemos
+    \[p = 4(z-5) + 5 = 4z - 4\cdot 5+5 = 4z -20 + 5 = 4z -15\]
+    y de la segunda
+    \[p = 2(z+5) - 5 = 2z + 10-5 = 2z+5.\]
+    Igualando ambas,
+    \begin{align*}
+        4z-15 &= 2z+5 &&\text{restando 2z y sumando 15 a ambos lados}\\
+        4z-2z &= 5+15 \\
+        2z &= 20 \\
+        z &= 10
+    \end{align*}
+    Sustituyendo en la segunda ecuación, obtenemos que $p = 2z + 5 = 2\cdot 10 + 5 = 25$. Por lo tanto P tiene 25 años y Z tiene 10.}
+    \end{solution}
 
 \question La diferencia entre dos números enteros positivos es 48. Si se divide el mayor entre el menor el cociente es 6 y el residuo es 3.
 
@@ -132,5 +232,30 @@ Si hace 5 años la persona P tenía el cuádruplo de la edad de la persona Z y d
 \choice La suma de las cifras del número menor es par.
 \choice El producto de los dígitos del número mayor es par.
 \end{choices}
+
+\begin{solution}
+    Esta es una pregunta que se puede hacer muy rápido si uno lee bien, en particular, las respuestas. En particular, la C. Notemos que el séxtuplo de un número entero (el cuadrado de un número entero es entero) es par, pues es un múltiplo de 6, y 2 divide a 6. Así, esto es cierto sin importar que el número mayor sea el que nos describen en el problema. Basta ver que es entero. Así, la respuesta correcta es la C. \hfill $\square$
+
+    {\small \itshape
+    Por completitud calculemos los números y veamos que el resto de opciones son falsas. Si $x$ es el menor y $y$ es el mayor, tenemos que $y-x = 48$ y que $y = 6x + 3$ (esto es lo que significa que el cociente sea 6 y el residuo 3, que $x$ cabe 6 veces en y y sobran 3). Si sustituimos $y$ en la primera ecuación, obtenemos que
+    \begin{align*}
+        (6x+3)-x &= 48 \\
+        6x-x + 3 &= 48 \\
+        5x &=45 \\
+        x &= 9 \\
+        y &= 6x + 3 \\
+        y &= 6\cdot 9 + 3 \\
+        y &= 57
+    \end{align*}
+    De esta forma, tenemos que el número mayor es 57 y el menor es 9. Claramente su diferencia es 48 y al dividir 57 entre 9 obtenemos cociente 6 y residuo 3.
+    \begin{enumerate}[A.]
+        \item $57+9 = 66$ no es impar.
+        \item $5 + 7 = 12$ no es impar.
+        \item $6\cdot 57^2 = 2\cdot (3\cdot57^2)$ es un número par, como vimos antes.
+        \item Como 9 solo tiene una cifra, la suma de sus cifras es el propio 9, que no es par.
+        \item $5\cdot 7 = 35$ no es par.
+    \end{enumerate}
+    }
+\end{solution}
 
 \end{questions}

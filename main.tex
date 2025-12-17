@@ -42,8 +42,9 @@ sorting=ynt
 \let\footnote=\endnote
 \renewcommand{\notesname}{Referencias}
 
+\renewcommand{\thequestion}{\arabic{question}}
+
 \renewcommand{\thepartno}{\alphalph{\value{partno}}}
-\counterwithin{question}{subsection}
 
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
 
@@ -52,7 +53,7 @@ sorting=ynt
 \setcounter{endnote}{0}
 }
 
-\newcommand{\extsol}[1]{{\small\itshape #1}}
+% \newcommand{\extsol}[1]{{\small\itshape #1}}
 
 \newcommand{\cmdos}{\text{cm}^2}
 \newcommand{\cm}{\text{cm}}
