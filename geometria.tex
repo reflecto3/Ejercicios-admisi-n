@@ -258,10 +258,29 @@ En Papa John's venden pizzas de 8 pulgadas y de 10 pulgadas de diámetro. Si la 
 \end{center}
 \begin{choices}
     \choice $12\pi$
-    \choice $16-4\pi$
+    \CorrectChoice $16-4\pi$
     \choice $64-4\pi$
     \choice $4\pi - 8$
 \end{choices}
+
+\begin{solution}
+    Note que el área sombreada es una de las cuatro esquinas que quedan del cuadrado al quitar el círculo inscrito. Por tanto, una forma de calcularla es calculando el área del cuadrado, restando la del círculo y dividiendo entre 4. Eso vamos a hacer a continuación.
+
+    Como el perímetro de un cuadrado es la suma de los cuatro lados, $4l = 32$cm, y por tanto $l=8$cm. De aquí, tenemos que el área del cuadrado es $A_\square = l^2 = 8^2\cmdos = 64\cmdos$. 
+    
+    Por otro lado, notemos que el diámetro del círculo coincide con el lado del cuadrado, 8cm. El radio es la mitad, $r = 8/2 = 4$cm. El área del círculo es entonces $A_\bigcirc = \pi\cdot r^2 = 16\pi\cmdos$
+    
+    Por tanto, el área de lo que queda al quitar el círculo al cuadrado es $64-16\pi$ centímetros cuadrados. Esta área está formada por cuatro esquinas (\begin{tikzpicture}[scale = 0.2]
+    \draw (-1, -1) rectangle (1, 1);
+    \draw (0,0) circle [radius=1cm];
+    \fill[gray] (-1, -1) -- (0, -1) arc[start angle=-90, end angle=-180, radius =1cm] -- cycle;
+    \fill[gray!50] (-1, 1) -- (1, 1) -- (1, -1) -- (0,-1) arc[start angle=-90, end angle=180, radius =1cm] -- cycle;
+\end{tikzpicture}) como la que queremos calcular, por lo que el área sombreada es (en centímetros cuadrados)
+    \[
+    A_S = \frac{64-16\pi}{4} = \frac{64}{4} - \frac{16\pi}{4} = 16 - 4\pi
+    \]
+La respuesta correcta es la B.
+\end{solution} 
 
 \question En la figura adjunta se muestra un \textit{pentaminó}, que es una figura compuesta por 5 cuadrados congruentes en donde cada uno tiene al menos un lado en común con otro cuadrado. Si el perímetro de la figura es de 60 cm, entonces el área de la región sombreada con gris, en centímetros cuadrados, corresponde a
 \begin{center}
