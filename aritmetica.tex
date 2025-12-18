@@ -276,7 +276,7 @@ Una persona inició un trabajo a las 3:47 p. m. El trabajo lo terminó la primer
 
 \begin{choices}
     \choice 172
-    \choice 192
+    \CorrectChoice 192
     \choice 212
     \choice 232
 \end{choices}
@@ -517,37 +517,18 @@ que tiene 7 años en P? \footnote{\cite{SEMA2021}}
 
 \begin{choices}
     \choice 5
-    \choice 6
+    \CorrectChoice 6
     \choice 8
     \choice 9
 \end{choices}
 
 \begin{solution}
-    Este es un problema de conversiones. Tenemos tres unidades: años en P, años en Q, y días terrestres, y tenemos conversiones de 1 año en P son 120 días terrestres, y 1 año en Q son 140 días terrestres. Luego, 7 años en P serían $120\cdot7 = 840$ días terrestres, y como cada 140 días de estos hacen 1 año en Q, dividimos esta cantidad entre 140: para hacerlo fácil, lo mejor es escribirlo como una fracción e ir cancelando factores comunes:
+    Sabemos convertir de años en P a días terrestres, y de años en Q a días terrestres. Nos piden combinar ambas para pasar de años en P a años en Q. Como cada año en P son 120 días terrestres, un habitante que tiene 7 años en P tiene por tanto $7\cdot 120$ d\'ias terrestres --- aún no lo calculamos, pues es más fácil dejarlo así y luego hacer todas las operaciones. Ahora bien, cada 140 días terrestres se obtiene un año de Q, por lo tanto, para pasar de días terrestres a años en Q hay que dividir entre 140. Así, el habitante tiene
     \[
-    \frac{840}{140} = \frac{84\!\cancel{0}}{14\!\cancel{0}} = \frac{\cancelto{42}{84}}{\cancelto{7}{14}} = \frac{42}{7} = 6 \text{ años de Q.}
+    \frac{7\cdot 120}{140} = \frac{7\cdot 12}{14} = \frac{12}{2} = 6 \text{ años en Q.}
     \]
-    Lo que hicimos fue dividir primero entre 10 arriba y abajo, luego entre 2 y luego entre 7.
-
-    Otra forma más rápida es no hacer el cálculo $120\cdot7$ días terrestres. Si lo dejamos así, y luego decimos que cada 140 días de estos es un año de Q, dividimos entre 140:
-    \[
-    \frac{120\cdot7}{140} = \frac{12\cdot\cancel{10}\cdot7}{14\cdot\cancel{10}} = \frac{6\cdot\cancel2\cdot \cancel7}{\cancel7\cdot \cancel2} = 6 \text{ años de Q.}
-    \]
-    Aquí cancelamos un 0 de arriba y abajo (sacando un 10 de 120 y uno de 140 y cancelándolos), luego cambiamos 12 por $6\cdot2$ y 14 por $7\cdot2$. Y cancelamos lo factores comunes del numerador y del denominador.
-
-    \textbf{Forma alternativa:} Si no queremos dividir, la otra opción es pasar todo a días terrestres, incluyendo las opciones de respuesta. Sabemos que 7 años en P son 840 días terrestres, y luego las respuestas que nos dan son (usando que cada año en Q son 140 días terrestres):
-
-    \begin{enumerate}[A.]
-        \item 5 años en Q $= 5\cdot 140 = 10 \cdot70 = 700$ días terrestres (multipliqué el 5 por 2 y dividí el 140 entre 2 para hacer más fácil el cálculo).
-        \item 6 años en Q $= 6 \cdot 140 = 600 + 240 = 840$ días terrestres (hice primero $6 \cdot 100$ y le sumé $6\cdot 40$).
-        \item 8 años en Q $= 8 \cdot 140 = 800 + 320 = 1120$ días terrestres.
-        \item 9 años en Q $= 9 \cdot 140 = 900 + 360 = 1260$ días terrestres.
-    \end{enumerate}
-
-    Así, comparando, debe ser la B. \hfill $\square$
+    La respuesta correcta es la B.
 \end{solution}
-
-
 
 
 \question Carlos tenía 810 gapes en la billetera al inicio del día. Él decidió regalar la tercera parte del dinero que tuviera en la billetera a cada uno de los sobrinos que llegara a su casa ese día.
@@ -561,6 +542,14 @@ que tiene 7 años en P? \footnote{\cite{SEMA2021}}
     \choice 30 gapes
 \end{choices}
 
+\begin{solution}
+    Lo calculamos paso a paso. Carlos inicia con 810 gapes. Al primer sobrino le da una tercera parte, es decir $810/3 = (900-90)/3 = 300 - 30 = 270$ gapes, y le quedan $810-270 = 540$ gapes.
+    
+    Al segundo sobrino le ofrece $540/3 = (600-60)/3 = 200 - 20 = 180$ gapes, y le quedan $540-180 = 360$ gapes. 
+
+    Por lo tanto, al tercer sobrino le dio $360/3= 120$ gapes. La opción correcta es la D.
+\end{solution}
+
 \question Los asientos de un carrusel están numerados con 1, 2, 3, y así sucesivamente de forma consecutiva y circular. Un niño está sentado en el número 11 y otro está sentado en el número 4, que está diametralmente opuesto. Entonces, la cantidad de asientos que tiene el carrusel es\footnote{\cite{OLCOMAN1-2021}}
 \begin{choices}
     \choice 13
@@ -568,7 +557,28 @@ que tiene 7 años en P? \footnote{\cite{SEMA2021}}
     \choice 16
     \choice 17
 \end{choices}
-    
+
+\begin{solution}
+    El número 4 y el número 11 están diametralmente opuestos. Queremos saber entonces cómo se ve el carrusel y poder ver cuantos asientos tiene:
+    \begin{center}
+        \begin{tikzpicture}
+            \foreach \x in {1,...,11}
+                \node (\x) at (25*\x-25:1cm) {$\x$};
+            \draw[<->, shorten <=3pt, shorten >=3pt] (4) -- (11);
+        \end{tikzpicture}
+    \end{center}
+    Sabemos que del 4 al 11, excluyéndolos, hay de un lado 6 asientos en orden ascendente: 5, 6, 7, 8, 9, 10. Por lo tanto, del otro lado tienen que haber otros 6. El total de asientos es entonces 6 de un lado más 6 del otro más el 4 y el 11 son en total 14 asientos:
+
+    \begin{center}
+    \begin{tikzpicture}
+    \foreach \x in {1,...,14}
+        \node (\x) at ({360*(\x-1)/14}:1cm) {$\x$};
+    \draw[green!60, thin] (360*3.5/14:1.2cm) arc[start angle=360*3.5/14, end angle=360*9.5/14, radius=1.2cm] -- (360*9.5/14:0.8cm) arc[start angle=360*9.5/14, end angle=360*3.5/14, radius=0.8cm] -- cycle;
+    \draw[green!60, thin] (360*10.5/14:1.2cm) arc[start angle=360*10.5/14, end angle=360*16.5/14, radius=1.2cm] -- (360*16.5/14:0.8cm) arc[start angle=360*16.5/14, end angle=360*10.5/14, radius=0.8cm] -- cycle;
+    \end{tikzpicture}
+    \end{center}
+
+\end{solution}
 \end{questions}
 
 \subsection{Operaciones con fracciones}
@@ -580,100 +590,136 @@ que tiene 7 años en P? \footnote{\cite{SEMA2021}}
         \begin{parts}
             \part $\dfrac{23}{15}\cdot\dfrac{10}{12} =$
             \part $\dfrac{81}{49}\cdot\dfrac{7}{45} =$
-            \part $\dfrac{10}{56}\cdot\dfrac{21}{320}$
-            \part $\dfrac{9	}{2	}\cdot\dfrac{ 5}{12}$
-            \part $\dfrac{64}{60}\cdot\dfrac{30}{8 }$
-            \part $\dfrac{23}{27}\cdot\dfrac{90}{46}$
-            \part $\dfrac{45}{78}\cdot\dfrac{42}{30}$
-            \part $\dfrac{72}{84}\cdot\dfrac{175}{50}$
-            \part $\dfrac{91}{99}\cdot\dfrac{55}{13}$
-            \part $\dfrac{14}{9}\cdot\dfrac{21}{2}$
-            \part $\dfrac{30}{19}\cdot\dfrac{19}{550}$
-            \part $\dfrac{35}{36}\cdot\dfrac{84}{85}$
-            \part $\dfrac{41}{64}\cdot\dfrac{86}{82}$
-            \part $\dfrac{11}{95}\cdot\dfrac{85}{22}$
-            \part $\dfrac{64}{44}\cdot\dfrac{121}{54}$
-            % \part $\dfrac{85}{19}\cdot\dfrac{93}{25}$
-            % \part $\dfrac{35}{28}\cdot\dfrac{84}{89}$
-            % \part $\dfrac{29}{39}\cdot\dfrac{72}{67}$
-            % \part $\dfrac{75}{88}\cdot\dfrac{26}{48}$
-            % \part $\dfrac{44}{90}\cdot\dfrac{53}{97}$
-            % \part $\dfrac{72}{53}\cdot\dfrac{28}{51}$
-            % \part $\dfrac{62}{62}\cdot\dfrac{38}{55}$
-            % \part $\dfrac{89}{69}\cdot\dfrac{89}{39}$
-            % \part $\dfrac{43}{83}\cdot\dfrac{48}{16}$
-            % \part $\dfrac{79}{71}\cdot\dfrac{65}{99}$
-            % \part $\dfrac{46}{69}\cdot\dfrac{72}{93}$
-            % \part $\dfrac{70}{30}\cdot\dfrac{96}{64}$
-            % \part $\dfrac{38}{17}\cdot\dfrac{24}{74}$
-            % \part $\dfrac{36}{86}\cdot\dfrac{79}{45}$
-            % \part $\dfrac{33}{67}\cdot\dfrac{19}{66}$
-            % \part $\dfrac{66}{97}\cdot\dfrac{91}{93}$
-            % \part $\dfrac{50}{39}\cdot\dfrac{29}{89}$
-            % \part $\dfrac{52}{27}\cdot\dfrac{32}{73}$
-            % \part $\dfrac{18}{86}\cdot\dfrac{59}{58}$
-            % \part $\dfrac{27}{45}\cdot\dfrac{57}{52}$
-            % \part $\dfrac{78}{61}\cdot\dfrac{98}{19}$
-            % \part $\dfrac{31}{88}\cdot\dfrac{39}{35}$
-            % \part $\dfrac{46}{17}\cdot\dfrac{60}{52}$
-            % \part $\dfrac{39}{72}\cdot\dfrac{92}{49}$
-            % \part $\dfrac{24}{57}\cdot\dfrac{46}{57}$
-            % \part $\dfrac{37}{88}\cdot\dfrac{39}{35}$
-            % \part $\dfrac{76}{13}\cdot\dfrac{94}{88}$
+            \part $\dfrac{10}{56}\cdot\dfrac{21}{320} =$
+            \part $\dfrac{9	}{2	}\cdot\dfrac{ 5}{12} =$
+            \part $\dfrac{64}{60}\cdot\dfrac{30}{8 } =$
+            \part $\dfrac{23}{27}\cdot\dfrac{90}{46} =$
+            \part $\dfrac{45}{78}\cdot\dfrac{42}{30} =$
+            \part $\dfrac{72}{84}\cdot\dfrac{175}{50} =$
+            \part $\dfrac{91}{99}\cdot\dfrac{55}{13} =$
+            \part $\dfrac{14}{9}\cdot\dfrac{21}{2} =$
+            \part $\dfrac{30}{19}\cdot\dfrac{19}{550} =$
+            \part $\dfrac{35}{36}\cdot\dfrac{84}{85} =$
+            \part $\dfrac{41}{64}\cdot\dfrac{86}{82} =$
+            \part $\dfrac{11}{95}\cdot\dfrac{85}{22} =$
+            \part $\dfrac{64}{44}\cdot\dfrac{121}{54} =$
+
+            \part $\dfrac{16}{27}\div\dfrac{32}{15} =$
+            \part $\dfrac{72}{28}\div\dfrac{7}{70} =$
+            \part $\dfrac{16}{39}\div\dfrac{72}{13} =$
+            \part $\dfrac{36}{76}\div\dfrac{48}{19} =$
+            \part $\dfrac{15}{42}\div\dfrac{35}{49} =$
+            \part $\dfrac{35}{81}\div\dfrac{28}{27} =$
+            \part $\dfrac{92}{54}\div\dfrac{23}{9} =$
+            \part $\dfrac{64}{88}\div\dfrac{56}{64} =$
+            \part $\dfrac{12}{45}\div\dfrac{66}{50} =$
+            \part $\dfrac{18}{37}\div\dfrac{12}{74} =$
+            \part $\dfrac{24}{14}\div\dfrac{96}{49} =$
+            \part $\dfrac{25}{16}\div\dfrac{80}{11} =$
+            \part $\dfrac{26}{5}\div\dfrac{65}{40} =$
+            \part $\dfrac{27}{17}\div\dfrac{63}{51} =$
+            \part $\dfrac{33}{45}\div\dfrac{44}{55} =$
         \end{parts}
     \end{multicols}
 
-    \question El resultado de la operación 
-    \[
-    \left[\left(\frac{7}{12}+\frac{3}{16}\right)-\left(\frac{9}{32}-\frac{7}{40}\right)\right]\div\left(1-\frac{13}{16}\right)
-    \]
-    es\footnote{\cite{OLCOMAN1-2021}}
-    \begin{choices}
-        \choice $\dfrac{319}{30}$
-        \choice $\dfrac{319}{90}$
-        \choice $\dfrac{421}{90}$
-        \choice $\dfrac{421}{30}$
-    \end{choices}
+    \question Resuelva y simplifique al máximo las siguientes sumas y restas de fracciones. Recuerde que para poder sumar o restar fracciones el denominador de ambas debe ser el mismo (i.e., deben ser fracciones homogéneas). En caso de que no sea así es necesario homogenizar, transformar las fracciones para que tengan el mismo denominador. Es posible que algunas den números negativos.
 
+    \begin{multicols}{3}
+        \begin{parts}
+            \part $\dfrac{23}{5}+\dfrac{12}{5} =$
+            \part $\dfrac{8}{9}+\dfrac{7}{9} =$
+            \part $\dfrac{10}{6}+\dfrac{23}{6} =$
+            \part $\dfrac{17}{12}+\dfrac{19}{12} =$
+            \part $\dfrac{64}{7}+\dfrac{30}{7} =$
+            \part $\dfrac{5}{7}+\dfrac{5}{2} =$
+            \part $\dfrac{15}{8}+\dfrac{11}{4} =$
+            \part $\dfrac{13}{4}+\dfrac{12}{3} =$
+            \part $\dfrac{11}{9}+\dfrac{5}{6} =$
+            \part $\dfrac{7}{3}+\dfrac{11}{2} =$
+            \part $\dfrac{15}{9}+\dfrac{5}{2} =$
+            \part $\dfrac{33}{6}+\dfrac{13}{5} =$
+            \part $\dfrac{40}{4}+\dfrac{17}{5} =$
+            \part $\dfrac{11}{5}+\dfrac{78}{10} =$
+            \part $\dfrac{19}{4}+\dfrac{31}{8} =$
+
+            \part $\dfrac{39}{4}-\dfrac{32}{4} =$
+            \part $\dfrac{49}{6}-\dfrac{7}{6} =$
+            \part $\dfrac{76}{15}-\dfrac{72}{15} =$
+            \part $\dfrac{15}{7}-\dfrac{3}{2} =$
+            \part $\dfrac{15}{11}-\dfrac{30}{22} =$
+            \part $\dfrac{7}{3}-\dfrac{14}{9} =$
+            \part $\dfrac{11}{6}-\dfrac{16}{9} =$
+            \part $\dfrac{31}{8}-\dfrac{15}{4} =$
+            \part $\dfrac{12}{9}-\dfrac{66}{5} =$
+            \part $\dfrac{18}{2}-\dfrac{12}{11} =$
+            \part $\dfrac{12}{7}-\dfrac{5}{21} =$
+            \part $\dfrac{25}{7}-\dfrac{25}{9} =$
+            \part $\dfrac{11}{8}-\dfrac{11}{9} =$
+            \part $\dfrac{3}{4}-\dfrac{3}{12} =$
+            \part $\dfrac{33}{44}-\dfrac{44}{55} =$
+        \end{parts}
+    \end{multicols}
+
+    
     \question Si $a=2$ y $b=3$, la expresión
     \[
-    \frac{\dfrac{a}{b} + \dfrac{b}{a}}{\dfrac{b}{a}+\dfrac{1}{ab}}-1
-    \]
-    es equivalente a\footnote{\cite{OLCOMAN1-2021}}
-
-    \begin{choices}
-        \choice $\dfrac{23}{10}$
-        \choice $\dfrac{1}{2}$
-        \choice $\dfrac{3}{10}$
-        \choice $-\dfrac{3}{2}$
-    \end{choices}
+        \frac{\dfrac{a}{b} + \dfrac{b}{a}}{\dfrac{b}{a}+\dfrac{1}{ab}}-1
+        \]
+        es equivalente a\footnote{\cite{OLCOMAN1-2021}}
+        
+        \begin{choices}
+            \choice $\dfrac{23}{10}$
+            \choice $\dfrac{1}{2}$
+            \CorrectChoice $\dfrac{3}{10}$
+            \choice $-\dfrac{3}{2}$
+        \end{choices}
+        
+        \begin{solution}
+            Vamos calculando las cosas paso a paso. Primero el numerador $\frac{a}{b}+\frac{b}{a}$, si $a=2$ y $b=3$:,
+            \[
+                \frac{2}{3}+\frac{3}{2} = \frac{2\cdot 2}{3\cdot2}+\frac{3\cdot3}{2\cdot3} = \frac{4+9}{6} = \frac{13}{6}.
+                \]     
+                A continuación el denominador
+                \[
+                    \frac{b}{a}+\frac{1}{ab} = \frac{3}{2}+\frac{1}{2\cdot3} = \frac{9}{6} + \frac{1}{6} = \frac{10}{6}.
+                    \]
+                    Dividiendo ambos
+                    \[
+                        \frac{\dfrac{13}{6}}{\dfrac{10}{6}} = \frac{\cancel{\dfrac{1}{6}}\cdot 13}{\cancel{\dfrac{1}{6}}\cdot 10} = \frac{13}{10}.
+                        \]
+                        Por último le restamos 1:
+    \[
+        \frac{13}{10}-1 = \frac{13-10}{10} = \frac{3}{10}.
+        \]
+        La respuesta correcta es la C. \hfill $\square$
+    \end{solution}
 \end{questions}
 
 \subsection{Problemas con números racionales}
 \begin{questions}
-
-\question
-David tiene dos calculadoras $P$ y $Q$. La calculadora $P$ resuelve las operaciones normalmente. La calculadora $Q$ cambia los números de una operación por el doble de estos. Así, por ejemplo, cuando se ingresa la operación $3\cdot6$, se calcula la operación $6 \cdot 12$. David realiza operaciones básicas en ambas calculadoras y se da cuenta que hay una operación que al aplicarla a una pareja de números, en cualquiera de las calculadoras, $P$ o $Q$, el resultado es el mismo.
-
-¿Cuál es, con certeza, la operación en la que David obtiene el mismo resultado? \footnote{\cite{practicaUCR1}}
-
-\begin{choices}
-    \choice Suma.
-    \choice Resta.
-    \choice División.
-    \choice Multiplicación.
-\end{choices}
-
-\begin{solution}
-    Podemos hacer casos tomando un ejemplo muy básico, como 2 y 1. 
-    \begin{enumerate}[A.]
+    
+    \question
+    David tiene dos calculadoras $P$ y $Q$. La calculadora $P$ resuelve las operaciones normalmente. La calculadora $Q$ cambia los números de una operación por el doble de estos. Así, por ejemplo, cuando se ingresa la operación $3\cdot6$, se calcula la operación $6 \cdot 12$. David realiza operaciones básicas en ambas calculadoras y se da cuenta que hay una operación que al aplicarla a una pareja de números, en cualquiera de las calculadoras, $P$ o $Q$, el resultado es el mismo.
+    
+    ¿Cuál es, con certeza, la operación en la que David obtiene el mismo resultado? \footnote{\cite{practicaUCR1}}
+    
+    \begin{choices}
+        \choice Suma.
+        \choice Resta.
+        \CorrectChoice División.
+        \choice Multiplicación.
+    \end{choices}
+    
+    \begin{solution}
+        Podemos hacer casos tomando un ejemplo muy básico, como 2 y 1. 
+        \begin{enumerate}[A.]
         \item En la calculadora $P$, $2+_{_P}1 = 2+1 = 3$. En la calculadora $Q$, $2+_{_Q}1 = 4+2 = 6$. Como $3\neq 6$, no puede ser suma.
         \item En la calculadora $P$, $2-_{_P}1 = 2-1=1$. En la $Q$, $2-_{_Q}1 = 4-2 = 2$, que son distintos. Así, no es la resta.
         \item En $P$, $2\div_{_P}1 = \frac{2}{1} = 2$, y en $Q$, $2\div_{_Q}1 = \frac{4}{2}=2$. La división podría funcionar. No podemos estar seguros aún pues solo es un ejemplo, un caso muy particular.
         \item En $P$, $2\cdot_{_P}1 = 2\cdot1 = 2$, en $Q$, $2\cdot_{_Q}1 = 4\cdot2 = 8$. Son distintos, luego la multiplicación no es.
     \end{enumerate}
     Por descarte, la opción correcta es la C.
-
+    
     En general es cierto, pues si $a, b$ son dos números, $a\div_{Q}b = \frac{2a}{2b} = \frac{a}{b} = a\div b = a\div_{_P}b$, pues podemos cancelar el 2 de arriba y abajo. \hfill $\square$
 \end{solution}
 
@@ -689,6 +735,25 @@ Según esta información, ¿cuál de las siguientes opciones es imposible que su
     \choice Dos recipientes quedarían cada uno con una tercera parte y los otros dos con una sexta parte cada uno.
 \end{choices}
 
+\begin{solution}
+    Veamos las opciones. Nos preguntan por una opción que sea imposible, por lo que basta ver que existe un caso hipotético en el que la opción es verdadera para afirmar que no sea imposible.
+    \begin{enumerate}
+        \item Que los cuatro recipientes queden con la misma cantidad de miel sí puede ocurrir, si cada uno termina con una cuarta parte.
+        \item Si dos recipientes quedan con un tercio de la miel cada uno, el tercero con un cuarto y el cuarto con lo que queda. Vemos que este último queda con 
+        \[1 -\frac{1}{3} - \frac{1}{3} -\frac{1}{4} = \frac{12}{12} -\frac{4}{12}-\frac{4}{12}-\frac{3}{12} = \frac{1}{12}\]
+        Que es diferente al resto, por lo que esta opción es posible.
+        \item En esta opción, C., la suma de las fracciones de miel es
+        \[
+        \frac{1}{6} + \frac{1}{6} + \frac{1}{2} + \frac{1}{3} = \frac{1}{6} + \frac{1}{6} + \frac{3}{6} + \frac{2}{6} = \frac{7}{6}
+        \]
+        siete sextos de la miel, lo que no puede ser, pues es más de lo que estaba en el recipiente original. Así, esta opción C. es imposible y por tanto es la correcta.
+        \item No es difícil ver que en este caso
+        \[\frac{1}{3} + \frac{1}{3} + \frac{1}{6} + \frac{1}{6} = 1\]
+        como deberia ser. Luego este sí es posible.
+    \end{enumerate}
+    \hfill $\square$
+\end{solution}
+
 \question
 María fue de compras el sábado, se gastó la tercera parte de lo que llevaba en un par de tenis, la cuarta parte del resto en un abrigo. Al final del día, quiere comprar un bolso cuyo precio es igual a cinco doceavos de lo que llevaba por la mañana.
 
@@ -696,9 +761,21 @@ Entonces se puede asegurar con certeza que María\footnote{\cite{SEMA2022}}
 \begin{choices}
     \choice no tiene suficiente dinero para comprar el bolso.
     \choice compra el bolso y no le sobra nada.
-    \choice compra el bolso y le sobra un doceavo de lo que llevaba.
+    \CorrectChoice compra el bolso y le sobra un doceavo de lo que llevaba.
     \choice puede comprar dos bolsos iguales.
 \end{choices}
+
+\begin{solution}
+    Digamos que originalmente María tenía $X$ dinero. Ella primero gasta una tercera parte de lo que llevaba en unos tenis, $X/3$, por lo que le quedan dos terceras partes de $X$. Nos dicen que del dinero que le quedó, que es $2X/3$, gasta una cuarta parte en un abrigo. Esto sería
+    \[\frac{1}{4}\cdot\frac{2}{3}X = \frac{1}{2\cdot3}X = \frac{X}{6}\]
+    una sexta parte de lo que llevaba originalmente. Por lo tanto, al final del día le queda
+    \[\frac{2}{3}X - \frac{1}{6}X = \frac{4}{6}X-\frac{1}{6}X = \frac{3}{6}X = \frac{X}{2}\]
+    la mitad del dinero con el que inició. Como cinco doceavos es menor que un medio (pues un medio son seis doceavos), esto quiere decir que sí le alcanza, y que justamente le sobra
+    \[
+    \frac{1}{2}X-\frac{5}{12}X= \frac{6}{12}X - \frac{5}{12}X
+    \]
+    un doceavo de lo que llevaba. La respuesta correcta es la C. \hfill $\square$
+\end{solution}
 
 \question
 Lucía tiene cuatro sobrinos Alejandra, Lucía, Mario y José, decide repartir sus ahorros entre ellos de manera que a Alejandra le dio la cuarta parte, a Lucía la tercera parte del resto, a Mario la mitad de lo que quedaba y a José lo que quedó. Entonces con certeza sucederá que\footnote{\cite{SEMA2022}}
@@ -708,6 +785,17 @@ Lucía tiene cuatro sobrinos Alejandra, Lucía, Mario y José, decide repartir s
     \choice José recibió más dinero que Lucía.
     \choice José recibió más dinero que Mario.
 \end{choices}
+
+\begin{solution}
+    Como en la anterior, si $X$ representa los ahorros de Lucía (la tía), entonces
+    \begin{itemize}
+        \item Alegandra recibe $X/4$ y quedan $3X/4$.
+        \item Lucía recibe la tercera parte de $3X/4$, que es $X/4$ (la tercera parte de tres cuartos es un cuarto). Así, ya se fueron dos cuartos y queda la mitad del dinero, $X/2$.
+        \item A Mario le dió la mitad de lo que queda. La mitad de un medio es un cuarto, $X/4$.
+        \item Y a José lo que quedó, que es el último cuarto del dinero original, $X/4$.
+    \end{itemize}
+    Vemos por tanto que todos recibieron la misma cantidad de dinero. La respuesta correcta es la A. \hfill $\square$
+\end{solution}
 
 \question
 Pedro tiene un tanque lleno de agua y desea repartirla entre varios baldes.
@@ -719,9 +807,23 @@ Primero llena $\dfrac{1}{4}$ del tanque en un balde grande. Luego reparte la mit
 \begin{choices}
     \choice El último balde contiene la misma cantidad que el balde grande.
     \choice Cada balde mediano contiene más que el balde grande.
-    \choice El último balde contiene menos que cualquier otro balde.
+    \choice El último balde contiene más agua que cualquier otro balde.
     \choice El agua del tanque se distribuye en partes exactamente iguales entre los cuatro baldes.
 \end{choices}
+
+\begin{solution}
+    Si $T$ representa la capacidad del tanque, el primer balde recibe $T/4$ de agua, y quedan $3T/4$. Los dos baldes medianos reciben (entre los dos) la mitad de esto, en partes iguales. Es decir, entre los dos reciben
+    \[
+    \frac{\dfrac{3}{4}T}{2} = \frac{3}{8}T\]
+    Y como cada uno recibe lo mismo, cada uno recibe la mitad de esto que es $3T/16$. En el tanque quedaron los otros tres octavos, $3T/8$, y esto lo recibe el último balde. Veamos cuales son las opciones de respuesta:
+
+    \begin{enumerate}[A.]
+        \item La cantidad que recibe el último balde, $3T/8$ no es igual a la del primero, que recibió una cuarta parte. 
+        \item Los baldes medianos recibieron cada uno $3T/16$, que es menor que lo que recibió el grande, $T/4 = 4T/16$.
+        \item El último balde recibió $3T/8 = 6T/16$, que comparándolo con los otros es en efecto más que lo que recibió cualquier otro. Así, la respuesta correcta es la C.
+    \end{enumerate}
+    \hfill $\square$    
+\end{solution}
 
 \question
 Isabel horneó un pastel para compartirlo con sus amigas. Primero le dio a Ana la quinta parte del pastel. Luego, le dio a Beatriz la tercera parte de lo que quedaba. Después, le dio a Carmen la mitad de lo que aún quedaba y se quedó con lo restante.
@@ -730,10 +832,20 @@ Isabel horneó un pastel para compartirlo con sus amigas. Primero le dio a Ana l
 
 \begin{choices}
     \choice $\dfrac{1}{5}$
-    \choice $\dfrac{4}{15}$
+    \CorrectChoice $\dfrac{4}{15}$
     \choice $\dfrac{7}{30}$
     \choice $\dfrac{1}{3}$
 \end{choices}
+
+\begin{solution}
+    Si $P$ representa el pastel, Ana recibió $P/5$, y quedó $4P/5$ del pastel. Beatriz recibió la tercera parte de lo que quedó, es decir
+    \[\dfrac{1}{3}\cdot\frac{4}{5}P = \frac{4}{15}P.\]
+    Quedó entonces
+    \[
+    \left(1 - \frac{1}{5}-\frac{4}{15}\right) P = \frac{15-3-4}{15}P = \frac{8}{15}P
+    \]
+    De esto, Carmen recibió la mitad, que son $4P/15$, e Isabel se quedó con los otros $4P/15$. Así, la respuesta es la B. \hfill $\square$
+\end{solution}
 
 \question
 Julián recorrió un sendero de montaña. En la primera hora caminó un tercio del camino. En la segunda hora recorrió la mitad de lo que le faltaba. En la tercera hora caminó la mitad de lo que aún faltaba después de la segunda hora.
@@ -741,11 +853,41 @@ Julián recorrió un sendero de montaña. En la primera hora caminó un tercio d
 ¿Qué parte del camino le falta por recorrer después de la tercera hora?
 
 \begin{choices}
-    \choice $\dfrac{1}{6}$
+    \CorrectChoice $\dfrac{1}{6}$
     \choice $\dfrac{1}{8}$
     \choice $\dfrac{1}{12}$
     \choice $\dfrac{1}{4}$
 \end{choices}
+
+\begin{solution}
+    Si $C$ representa todo el camino, en la primera hora Julián recorre $C/3$ y le queda por caminar $2C/3$. En la segunda hora recorre la mitad de esto, que son otros $C/3$, de forma que le quedan los últimos $C/3$. Pero en la tercera hora hizo solo la mitad de esto, que es $C/6$ (multiplicar el denominador por dos nos da la mitad), y quedan $C/6$. Por lo tanto, la respuesta correcta es la A. \hfill $\square$.
+\end{solution}
+
+\question El resultado de la operación 
+\[
+\left[\left(\frac{7}{12}+\frac{3}{16}\right)-\left(\frac{9}{32}-\frac{7}{40}\right)\right]\div\left(1-\frac{13}{16}\right)
+\]
+es\footnote{\cite{OLCOMAN1-2021}}
+\begin{choices}
+    \choice $\dfrac{319}{30}$
+    \CorrectChoice $\dfrac{319}{90}$
+    \choice $\dfrac{421}{90}$
+    \choice $\dfrac{421}{30}$
+\end{choices}
+
+\begin{solution}
+    \begin{align*}
+        &\left[\left(\frac{7}{12}+\frac{3}{16}\right)-\left(\frac{9}{32}-\frac{7}{40}\right)\right]\div\left(1-\frac{13}{16}\right) \\
+        =&\left[\frac{7}{12}+\frac{6}{32}-\frac{9}{32}+\frac{7}{40}\right]\div\left(\frac{16}{16}-\frac{13}{16}\right) \\
+        =& \left[\frac{7}{4\cdot3}-\frac{3}{32}+\frac{7}{8\cdot5}\right]\div\frac{3}{16} \\
+        =& \left[\frac{7}{4\cdot3}-\frac{3}{32}+\frac{7}{8\cdot5}\right]\cdot\frac{16}{3} \\
+        =& \frac{7\cdot 16}{4\cdot3\cdot 3}-\frac{3\cdot 16}{32\cdot 3}+\frac{7\cdot 16}{8\cdot5\cdot 3} \\
+        =& \frac{7\cdot 4}{3\cdot 3}-\frac{1}{2}+\frac{7\cdot 2}{5\cdot 3} \\
+        =& \frac{7\cdot 4\cdot 2\cdot 5}{3\cdot3\cdot2\cdot5} - \frac{1\cdot3\cdot3\cdot 5}{2\cdot3\cdot3\cdot5}+\frac{7\cdot2\cdot2\cdot3}{5\cdot3\cdot2\cdot3} \\
+        =& \frac{280-45+84}{90} = \frac{319}{90}
+    \end{align*}
+    La opción correcta es la B. \hfill $\square$
+\end{solution}
 
 \end{questions}
 

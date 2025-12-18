@@ -10,7 +10,7 @@ Analice la siguiente secuencia y encuentre la ley que se da en ella:
 De acuerdo con la ley que se da en la secuencia anterior, ¿cuál es el número correspondiente a la posición 11? \footnote{\cite{practicaUCR1}}
 \begin{choices}
     \choice  99
-    \choice  120
+    \CorrectChoice  120
     \choice  132
     \choice  143 
 \end{choices}
@@ -24,8 +24,9 @@ De acuerdo con la ley que se da en la secuencia anterior, ¿cuál es el número 
     \[
     0 \xrightarrow{+3} 3 \xrightarrow{+5} 8 \xrightarrow{+7} 15 \xrightarrow{+9} 24 \xrightarrow{+11} 35 \xrightarrow{+13} 48 \xrightarrow{+15} 63 \xrightarrow{+17} 80 \xrightarrow{+19} 99 \xrightarrow{+21} 120
     \]
-    Así que el número correspondiente a la posición 11 es $T_{11}=120$, la opción B.
+    Así que el número correspondiente a la posición 11 es $T_{11}=120$, la opción B. \hfill $\square$
 
+    {\small \itshape
     Con un poco más de experiencia, reconocemos este patrón (el de sumar impares entre términos consecutivos) como el patrón de diferencias entre los números cuadrados perfectos:
     \begin{gather*}
     1 \xrightarrow{+3} 4 \xrightarrow{+5} 9 \xrightarrow{+7} 16 \xrightarrow{+9} 25 \xrightarrow{+11} 36 \xrightarrow{+13} 49\\
@@ -52,7 +53,7 @@ De acuerdo con la ley que se da en la secuencia anterior, ¿cuál es el número 
      &T_1 & &T_2 & &T_3 & &T_4 & \dots
     \end{align*}        
 
-    Por lo tanto, podemos afirmar que el término en la posición $n$ es $n^2-1$. En particular, el término en la posición 11 es $T_{11}=11^2-1 = 121-1 = 120$. Este método nos sirve más cuando el término que se pide está en una posición grande, pues entonces es muy lento ir haciendo las sumas una por una. \hfill $\square$
+    Por lo tanto, podemos afirmar que el término en la posición $n$ es $n^2-1$. En particular, el término en la posición 11 es $T_{11}=11^2-1 = 121-1 = 120$. Este método nos sirve más cuando el término que se pide está en una posición grande, pues entonces es muy lento ir haciendo las sumas una por una.}
 \end{solution}
 
 
@@ -194,14 +195,14 @@ De acuerdo con esta ley, ¿cuál es una expresión equivalente a $N_{235}$? \foo
 \begin{choices}
     \choice $234^2+234$
     \choice $234^2+235$
-    \choice $235^2+234$ %%%%
+    \CorrectChoice $235^2+234$ %%%%
     \choice $235^2+235$
 \end{choices}
 
 \begin{solution}
     En este tipo de preguntas de sucesiones, necesitamos saber dónde buscar el patrón. Aquí, por ejemplo, no es difícil ver cuál sería el siguiente término, $N_6 = 6^2 + 5$, y el siguiente, y el siguiente. Pero como nos piden el número $235$, no es viable hacer uno por uno hasta llegar al $235$. En estos casos, conviene descubrir una relación entre el número de término, o el índice (el numerito pequeño bajo la $N$) y el valor de ese término. En este caso es fácil ver que el término $n$-ésimo va a ser $n^2+(n-1)$, es decir, el cuadrado del índice más el número anterior al índice. 
 
-    Por lo tanto, $N_{235} = 235^2 + 234$, es decir, la $C$. Note que las respuestas son todas muy parecidas, entonces hay que asegurarse de marcar bien, con cuidado.  \hfill $\square$
+    Por lo tanto, $N_{235} = 235^2 + 234$. La opción correcta es la C. \hfill $\square$
 \end{solution}
 
 \question
@@ -229,13 +230,14 @@ $N_{116}$?  \footnote{\cite{SEMA2021}}
 \begin{solution}
     En esta pregunta, el patrón es bastante claro rápidamente: dejamos igual, sumamos 4, dejamos igual, sumamos 4, etc. Quizás el mayor problema es que nos piden el término número 116, por lo que no es viable ponernos a calcular término por término, necesitamos encontrar un atajo.
 
-    Como van en parejas, una forma sería intentar emparejar los términos y crear una nueva sucesión. Así, podemos decir que la pareja 1 es la de $N_1$ y $N_2$, y toma un valor de 2. La pareja 2 es la de $N_3$ y $N_4$ y toma el valor de 6. Y así sucesivamente. De hecho, la posición del segundo término de la pareja será, en cada caso, el doble del número de pareja en la que est[a. Afirmamos que la pareja número $k$ es la que contiene a los valores $N_{2k-1}$ y $N_{2k}$. Si a $V_k$ es el valor que toman ambos elementos de la pareja $k$, tenemos una nueva sucesión,
+    Como van en parejas, una forma sería intentar emparejar los términos y crear una nueva sucesión. Así, podemos decir que la pareja 1 es la de $N_1$ y $N_2$, y toma un valor de 2. La pareja 2 es la de $N_3$ y $N_4$ y toma el valor de 6. Y así sucesivamente. De hecho, la posición del segundo término de la pareja será, en cada caso, el doble del número de pareja en la que está. Afirmamos que la pareja número $k$ es la que contiene a los valores $N_{2k-1}$ y $N_{2k}$. Si a $V_k$ es el valor que toman ambos elementos de la pareja $k$, tenemos una nueva sucesión,
     \[
     V_1 = 2,\ V_2 =6,\ V_3 = 10,\ V_4 = 14, \dots.
     \]
-    Y, como $116 = 2 \cdot 58$, $N_116$ está en la pareja $58$ y toma el valor $V_{58}$. Como en cada paso se suman 4, tenemos que preguntarnos cuantos pasos hay de $V_1$ a $V_58$. Para esto, podemos ver que de $V_1$ a $V_2$ hay 1 paso. De $V_1$ a $V_3$ hay 2 pasos, y así sucesivamente, de $V_1$ a $V_{58}$ hay 57 pasos (note que no son 58, sino 58-1 pasos) de $+4$. Por esto, el valor $V_{58}$ es $V_1 + 57\cdot 4 = 2+228 = 230$. De esta forma la respuesta correcta es la C.
+    Y, como $116 = 2 \cdot 58$, $N_116$ está en la pareja $58$ y toma el valor $V_{58}$. Como en cada paso se suman 4, tenemos que preguntarnos cuantos pasos hay de $V_1$ a $V_58$. Para esto, podemos ver que de $V_1$ a $V_2$ hay 1 paso. De $V_1$ a $V_3$ hay 2 pasos, y así sucesivamente, de $V_1$ a $V_{58}$ hay 57 pasos (note que no son 58, sino 58-1 pasos) de $+4$. Por esto, el valor $V_{58}$ es $V_1 + 57\cdot 4 = 2+228 = 230$. De esta forma la respuesta correcta es la C. \hfill $\square$
 
-    Podemos generalizar este proceso. Las sucesiones donde el valor que se va sumando de un término a otro es constante se llaman sucesiones - o progresiones - aritméticas. Si $a_n$ es una sucesión aritmética donde la diferencia entre términos consecutivos es constante $d$, entonces para llegar de $a_1$ a $a_n$ damos $n-1$ pasos de $+d$ cada uno, lo que nos permite concluir que $a_n = a_1 + (n-1)\cdot d$ es una fórmula general para sucesiones \textit{aritméticas}. \hfill $\square$
+    {\small \itshape
+    Podemos generalizar este proceso. Las sucesiones donde el valor que se va sumando de un término a otro es constante se llaman sucesiones - o progresiones - aritméticas. Si $a_n$ es una sucesión aritmética donde la diferencia entre términos consecutivos es constante $d$, entonces para llegar de $a_1$ a $a_n$ damos $n-1$ pasos de $+d$ cada uno, lo que nos permite concluir que $a_n = a_1 + (n-1)\cdot d$ es una fórmula general para sucesiones aritméticas.}
 \end{solution}
 
 \question
@@ -295,7 +297,7 @@ Considere la siguiente secuencia, donde $n$ es un número entero positivo:
 \end{choices}
 
 \begin{solution}
-    De nuevo, no hemos de asustarnos por las expresiones algebraicas. De hecho, note que todos los términos son $3n$ más algo. Así, podemos fijarnos en esa constante, que va $-1, 2, x, 8$. ¿Qué número calzaría bien en esta secuencia? Del $-1$ al 2 hay 3 de diferencia. Del 2 al 8 hay 6 de diferencia. Por lo tanto, tendría sentido que del 2 al $x$ hubiesen 3 de diferencia y de $x$ al 8 otros tres, de forma que la sucesión es artimética. Por lo tanto, $x = 2+3 = 5$, y notemos que satisface muy claramente el patrón de las diferencias constantes. \hfill $\square$
+    De nuevo, no hemos de asustarnos por las expresiones algebraicas. De hecho, note que todos los términos son $3n$ más algo. Así, podemos fijarnos en esa constante, que va $-1, 2, x, 8$. ¿Qué número calzaría bien en esta secuencia? Del $-1$ al 2 hay 3 de diferencia. Del 2 al 8 hay 6 de diferencia. Por lo tanto, tendría sentido que del 2 al $x$ hubiesen 3 de diferencia y de $x$ al 8 otros tres, de forma que la sucesión es artimética. Por lo tanto, $x = 2+3 = 5$. La opción correcta es la C. \hfill $\square$
 \end{solution}
 
 \question Considere la siguiente sucesión:
@@ -307,7 +309,7 @@ Continuando con el patrón, ¿cuál es el séptimo término de la sucesión?
     \choice $9x + 35$
     \choice $7x + 35$
     \choice $7x + 32$
-    \choice $9x + 32$ %%%%
+    \CorrectChoice $9x + 32$ %%%%
     \choice $9x + 40$
 \end{choices}
 

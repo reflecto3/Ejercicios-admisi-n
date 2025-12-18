@@ -20,9 +20,10 @@ que las identifican sea 6? \footnote{\cite{SEMA2021}}
 \end{choices}
 
 \begin{solution}
-    El 0 tiene que ir con el 6 para que sumen 6, el 1 con el 5, el 2 con el 4. Hasta ahí hay 3 parejas, y note que ninguno de estos podría ir con otra pareja, pues si no sumarían distinto. El único número que queda es el 3. Pero no puede tener pareja, pues tendría que ser él mismo para que $3+3 = 6$. Sin embargo, todas las tiras tienen números distintos, así que esta pareja es imposible. Por lo tanto, el mayor número de parejas que pueden sacarse son 3 parejas. La respuesta correcta es la C.
-
-    Algunos detalles que vale la pena recalcar: aunque nos hablaban de azar, no entró a jugar nada de probabilidad, sino simplemente de ver cómo se podían emparejar los números. Es importante leer bien, para ver por ejemplo que el 3 no puede emparejarse consigo mismo pues todas las tiras tienen enteros distintos. Y por último, darnos cuenta de que como la pareja se saca en simultáneo, es lo mismo la pareja 2,4 que la pareja 4,2, así que solo se cuenta una vez. Si por error las contamos doble, obtendríamos 6 parejas, pero la respuesta sería incorrecta. \hfill $\square$
+    El 0 tiene que ir con el 6 para que sumen 6, el 1 con el 5, el 2 con el 4. Hasta ahí hay 3 parejas, y note que ninguno de estos podría ir con otra pareja, pues si no sumarían distinto. El único número que queda es el 3. Pero no puede tener pareja, pues tendría que ser él mismo para que $3+3 = 6$. Sin embargo, todas las tiras tienen números distintos, así que esta pareja es imposible. Por lo tanto, el mayor número de parejas que pueden sacarse son 3 parejas. La respuesta correcta es la C. \hfill $\square$
+    
+    {\small \itshape
+    Algunos detalles que vale la pena recalcar: aunque nos hablaban de azar, no entró a jugar nada de probabilidad, sino simplemente de ver cómo se podían emparejar los números. Es importante leer bien, para ver por ejemplo que el 3 no puede emparejarse consigo mismo pues todas las tiras tienen enteros distintos. Y por último, darnos cuenta de que como la pareja se saca en simultáneo, es lo mismo la pareja 2,4 que la pareja 4,2, así que solo se cuenta una vez. Si por error las contamos doble, obtendríamos 6 parejas, pero la respuesta sería incorrecta.}
 \end{solution}
 
 \question
@@ -87,9 +88,10 @@ números: 3, 5, 6, 7 y 9 sin repetirlos? \footnote{\cite{TEC2023}}
         9 &  &  &  &  &  \\ \hline
     \end{tabular}
     \end{center}
-    Vemos que de las opciones que quedan todos los productos son distintos. Por tanto, la respuesta correcta es la B., hay 10 productos distintos.
+    Vemos que de las opciones que quedan todos los productos son distintos. Por tanto, la respuesta correcta es la B., hay 10 productos distintos. \hfill $\square$
 
-    Si no quisieramos hacer la tabla, podríamos pensar en lo siguiente. Primero, tengo 5 formas de escoger mi primer número, y como no puedo repetir, tengo 4 formas de escoger el segundo. Hasta aquí hay 20 productos. Sin embargo, estoy contando ab y ba como combinaciones distintas, cuando no lo son pues dan lo mismo. Como cada una la estoy contando dos veces, divido entre 2: $5\cdot 4/2 = 20/2 = 10$. El tema es asegurarnos de que no haya productos repetidos dentro de estos 10  \hfill $\square$
+    {\small \itshape
+    Si no quisieramos hacer la tabla, podríamos pensar en lo siguiente. Primero, tengo 5 formas de escoger mi primer número, y como no puedo repetir, tengo 4 formas de escoger el segundo. Hasta aquí hay 20 productos. Sin embargo, estoy contando ab y ba como combinaciones distintas, cuando no lo son pues dan lo mismo. Como cada una la estoy contando dos veces, divido entre 2: $5\cdot 4/2 = 20/2 = 10$. El tema es asegurarnos de que no haya productos repetidos dentro de estos 10.}
 \end{solution}
 
 \question Bryan tiene un restaurante y para el almuerzo ofrece 3 opciones de carbohidrato, 2 de proteína, y 3 de ensalada.
@@ -97,14 +99,15 @@ números: 3, 5, 6, 7 y 9 sin repetirlos? \footnote{\cite{TEC2023}}
 \begin{choices}
     \choice 8
     \choice 15
-    \choice 18
+    \CorrectChoice 18
     \choice 20 
     \choice 25
 \end{choices}
 
 \begin{solution}
-    Por cada una de las 3 opciones de carbohidrato, hay 2 de proteína, de forma que hay $3\cdot 2 = 6$ combos de carbohidrato-proteína, y por cada uno de esos hay 3 de ensalada así que en total hay $6\cdot 3$ formas de armar un almuerzo. La respuesta correcta es la C.
+    Por cada una de las 3 opciones de carbohidrato, hay 2 de proteína, de forma que hay $3\cdot 2 = 6$ combos de carbohidrato-proteína, y por cada uno de esos hay 3 de ensalada así que en total hay $6\cdot 3$ formas de armar un almuerzo. La respuesta correcta es la C. \hfill $\square$
 
+    {\small \itshape
     En un diagrama de arbol, si los carbohidratos son A de arroz, Y de yuca y T de tortilla, las proteínas son R de res y P de pollo, y las ensaladas son M de mostaza, G de griega y C de césar, entonces tenemos las siguientes opciones (la idea es simplemente visualizarlo, en el examen basta con hacer el producto y asegurarnos de no estar contando dos veces alguna combinación o permutación):
     \begin{center}
     \begin{tikzcd}[row sep=0.1ex, column sep=1em]
@@ -131,7 +134,7 @@ números: 3, 5, 6, 7 y 9 sin repetirlos? \footnote{\cite{TEC2023}}
                         &                       & G\ar[r] & TPG \\
                         &                       & L\ar[r] & TPL \\
     \end{tikzcd} 
-    \end{center} \hfill $\square$
+    \end{center}}
 \end{solution}
 
 \question
@@ -167,7 +170,8 @@ números: 3, 5, 6, 7 y 9 sin repetirlos? \footnote{\cite{TEC2023}}
         A & SMAA & SSAA & SRAA & SAAA & S0AA \\ \hline
         O & SMOA & SSOA & SROA & SAOA & S0OA \\ \hline
     \end{tabular}
-    \end{center} \hfill $\square$
+    \end{center} 
+    La opción correcta es la D. \hfill $\square$
 \end{solution}
 
 \question
@@ -203,7 +207,7 @@ unidades sea 0 y los otros sean tres dígitos del 1 al 7, distintos entre sí?\f
     \choice 5
     \choice 6
     \choice 7 
-    \choice 8 %%%%%%%%%%%%
+    \CorrectChoice 8 %%%%%%%%%%%%
 \end{choices}
 
 \begin{solution}
@@ -248,9 +252,10 @@ De un grupo de 7 estudiantes, se deben seleccionar 3 para formar una comisión e
 
     Aquí, $3!$ (tres factorial) es el producto de todos los números del 1 al 3. 
     
-    Vemos entonces que cada comisión la estamos contando 6 veces. Así, dividimos 210 entre 6 para obtener el número de comisiones distintas que podemos escoger: $210/6 = 105/3 = 35$ comisiones. La opción correcta es la B.
-
-    Este es el número de combinaciones (cuando hablamos de combinación no importa el orden) de 3 objetos tomados de un grupo de 7. Otra forma de decirlo: es la cantidad de escogencias de 3 objetos de un grupo de 7. Se le llama comunmente ``7 escoge 3'' y se le denota por $\displaystyle\binom{7}{3}$ (note que no hay una barra entre el 7 y el 3. No hay que confundirlo con una fracción). \hfill $\square$
+    Vemos entonces que cada comisión la estamos contando 6 veces. Así, dividimos 210 entre 6 para obtener el número de comisiones distintas que podemos escoger: $210/6 = 105/3 = 35$ comisiones. La opción correcta es la B. \hfill $\square$
+    
+    {\small \hfill
+    Este es el número de combinaciones (cuando hablamos de combinación no importa el orden) de 3 objetos tomados de un grupo de 7. Otra forma de decirlo: es la cantidad de escogencias de 3 objetos de un grupo de 7. Se le llama comunmente ``7 escoge 3'' y se le denota por $\displaystyle\binom{7}{3}$ (note que no hay una barra entre el 7 y el 3. No hay que confundirlo con una fracción).}
 \end{solution}
 
 \question De un grupo de 5 candidatos en un programa de cocina, un chef va a escoger 3 que pasan a la siguiente ronda. ¿De cuántas formas distintas puede escoger el juez a los tres afortunados?
@@ -258,24 +263,12 @@ De un grupo de 7 estudiantes, se deben seleccionar 3 para formar una comisión e
 \begin{choices}
     \choice De 6 formas.
     \choice De 8 formas.
-    \choice De 10 formas.
+    \CorrectChoice De 10 formas.
     \choice De 12 formas.
 \end{choices}
 
 \begin{solution}
-    Digamos que los siete estudiantes son A, B, C, D, E, F y G. Vamos escogiendo la comisión un estudiante a la vez. Para escoger el primero, tenemos 7 opciones. Luego, para escoger al segundo tenemos 6 opciones, pues podemos escoger cualquiera de los que no hemos escogido aún, y de forma similar para escoger al tercero nos quedan 5 opciones. Hasta el momento, ¿cuántos escenarios tenemos? Por ejemplo, pensemos en el caso donde escogimos a A de primero. Entonces, para escoger el segundo, podría ser B, C, D, E, F o G, es decir, tenemos las parejas AB, AC, AD, AF, AE y AG. Y luego, para cada una de estas parejas tenemos 5 opciones para agregar en el último lugar, por lo que tendríamos
-    \begin{tabular}{|c|c|c|c|c|c|c|} \hline
-         & AB  & AC  & AD  & AE  & AF  & AG  \\ \hline 
-      +B & --- & ACB & ADB & AEB & AFB & AGB \\ \hline
-      +C & ABC & --- & ADC & AEC & AFC & AGC \\ \hline
-      +D & ABD & ACD & --- & AED & AFD & AGD \\ \hline
-      +E & ABE & ACE & ADE & --- & AFE & AGE \\ \hline
-      +F & ABF & ACF & ADF & AEF & --- & AGF \\ \hline
-      +G & ABG & ACG & ADG & AEG & AFG & --- \\ \hline
-    \end{tabular}
-    Note que las de la diagonal no se pueden porque ya el estudiante que queremos agregar fue escogido. Así para cada una de las 6 parejas tenemos 5 opciones que podemos agregar, lo que nos da 30 opciones totales que inician con A. Luego, como el resto se hacen de la misma manera, tenemos 30 para A, 30 para B, etc. así para cada posible estudiante de inicio. Como hay 7, el total de opciones sería de $7\cdot 30 =210$. Hicimos uso de la regla del producto. Hay 7 opciones para el primero, luego 6 para el segundo y luego 5 para el tercero, es decir hay $7\cdot5\cdot6 = 210$ opciones.
-    
-    ¡No tan rápido! Cuando hacemos estos problemas necesitamos tener cuidado. ¿Y si estamos contando un mismo comité varias veces? En efecto, notemos que los comités ABC, ACB, BAC, BCA, CAB y CBA son el mismo, por ejemplo, pero - de forma erronea - contamos cada uno porque el orden es distinto. Pero para solucionar esto, podemos preguntarnos, un mismo comité, ¿de cuantas formas podemos ordenarlo? Justamente como el anterior, de 6 maneras, pues podemos escoger cualquiera de los tres miembros de primero, luego quedan 2 para el segundo lugar y el que queda queda de último, es decir $3\cdot2\cdot1=6$ opciones. Como cada comité lo estamos contando un total de 6 veces, para encontrar cuantos comités distintos hay, dividimos $210/6 = 35$. Hay $35$ comités distintos. \hfill $\square$
+    De manera análoga al ejercicio anterior, hablamos de combinaciones de tres elementos escogidos de un grupo de 5, donde son todos distintos y no importa el orden. Si importase el orden, tendríamos 5 opciones para el primero, 4 para el segundo y 3 para el tercero, un total de $5\cdot 4 \cdot 3 = 60$ opciones. Sin embargo, cada grupo de 3 lo estamos contando $3! =6$ veces, una por cada ordenamiento posible (3 formas de escoger primer lugar, 2 para el segundo y 1 para el tercero). Así, dividimos y obtenemos que el chef tiene $60/6 = 10 = \binom{5}{3}$ formas de escoger a los tres que pasan a la siguiente ronda.
 \end{solution}
 
     
@@ -369,9 +362,9 @@ En la heladería del frente, sólo ofrecen helado en cono: ya sea normal o azuca
     \[
     \frac{\text{casos favorables}}{\text{casos totales}} = \frac{10}{18} = \frac{5}{9}
     \]
-    De esta forma, la opción correcta es la B.
+    De esta forma, la opción correcta es la B. \hfill $\square$
 \end{solution}
 
-
-
 \end{questions}
+
+\printnotes

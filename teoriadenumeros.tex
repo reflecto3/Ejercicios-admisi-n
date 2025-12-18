@@ -8,7 +8,7 @@ Camila tiene $36$ lápices, $60$ borradores y $84$ reglas. Desea hacer paquetes 
 
 \begin{choices}
     \choice 6
-    \choice 12
+    \CorrectChoice 12
     \choice 15
     \choice 18
 \end{choices}
@@ -22,7 +22,9 @@ Camila tiene $36$ lápices, $60$ borradores y $84$ reglas. Desea hacer paquetes 
         \item Si hiciera 18 paquetes, cada paquete tendría $36/18 = 2$ lápices, pero $60$ no es divisible entre 18 (obtenemos residuo 6 pues $18\cdot 3 + 6 = 60$) así que la cantidad de borradores no podría ser la misma en todos los paquetes.
     \end{enumerate}
 
-    De esta forma, la B. y C. no son posibles, y como $12 > 6$ y piden la mayor cantidad de paquetes que puede hacer, entonces la opción correcta es la B.
+    De esta forma, la B. y C. no son posibles, y como $12 > 6$ y piden la mayor cantidad de paquetes que puede hacer, entonces la opción correcta es la B. \hfill $\square$
+
+    \end{solution}
 
     Hay una forma estándar de hacer este tipo de problemas, con la herramienta llamada máximo común divisor (mcd). Anteriormente notamos que para que una cantidad de paquetes sea válida, debe dividir a las cantidades de objetos. Es decir, que si la cantidad de paquetes es $d$, entonces $d \mid 36$, $d \mid 60$ y $d \mid 84$, donde ``$\mid$'' significa ``divide''. Para esto podríamos calcular los conjuntos de divisores positivos de cada número y tomar el mayor que sea común a todos (de ahí el nombre ``máximo común divisor''):
     \begin{align*}
@@ -40,8 +42,8 @@ Camila tiene $36$ lápices, $60$ borradores y $84$ reglas. Desea hacer paquetes 
     \end{array}
     \]
 
-    Este proceso, además, tiene la ventaja de que los números que quedan abajo (los que ya no tienen factores comunes) son justamente las cantidades de material que queda en cada paquete. Hay 12 paquetes con 3 lápices, 5 borradores y 7 reglas cada uno. \hfill $\square$
-\end{solution}
+    Este proceso, además, tiene la ventaja de que los números que quedan abajo (los que ya no tienen factores comunes) son justamente las cantidades de material que queda en cada paquete. Hay 12 paquetes con 3 lápices, 5 borradores y 7 reglas cada uno.
+
 
 \question Isabel compró 2 naranjas, 4 mangos y algunas peras. Luego, ella agregó más frutas de cada tipo y así duplicó la cantidad de peras. Ahora ella tiene la misma cantidad de naranjas, mangos y peras.
 
@@ -57,9 +59,10 @@ Camila tiene $36$ lápices, $60$ borradores y $84$ reglas. Desea hacer paquetes 
 \begin{solution}
     Esta pregunta es difícil de hacer en abstracto. Una opción es hacer ejemplos y descartar opciones. Como al duplicar las peras, también agregó naranjas y mangos y todos tuvieron la misma cantidad, no podía tener muy poquitas peras, 1 o 2, pues entonces al duplicarlas tiene 4 o menos, y como agregó mangos, ya tiene más de 5 mangos. Hagamos algunos ejemplos.
 
-    Si tenía 3 peras, al final terminó con $3 \cdot 2 = 6$ de cada fruta. Es decir, tuvo que agregar 4 naranjas y 2 mangos. Como ambas son cantidades pares, esto nos permite descartar la A., la B. y la C., por lo que necesariamente es la D., la que queda.
+    Si tenía 3 peras, al final terminó con $3 \cdot 2 = 6$ de cada fruta. Es decir, tuvo que agregar 4 naranjas y 2 mangos. Como ambas son cantidades pares, esto nos permite descartar la A., la B. y la C., por lo que necesariamente la opción D. debe ser la correcta. \hfill $\square$
 
-    Para dar la solución completa, notemos que al final, como cada tipo de fruta terminó con la misma cantidad, y esta cantidad es el \textit{doble} de la cantidad de peras originales, debe ser par (es 2 por algún número). Digamos que $n$ es la cantidad original de peras, de forma que terminamos con $2n$ de cada tipo de fruta. Tuvimos que haber agregado entonces $2n-2$ naranjas y $2n-4$ mangos, que son ambos resta de números pares y por lo tanto son pares. \hfill $\square$
+    {\small \itshape
+    Para dar la solución completa, notemos que al final, como cada tipo de fruta terminó con la misma cantidad, y esta cantidad es el \textit{doble} de la cantidad de peras originales, debe ser par (es 2 por algún número). Digamos que $n$ es la cantidad original de peras, de forma que terminamos con $2n$ de cada tipo de fruta. Tuvimos que haber agregado entonces $2n-2$ naranjas y $2n-4$ mangos, que son ambos resta de números pares y por lo tanto son pares. }
 \end{solution}
 
 
@@ -84,36 +87,38 @@ Tres fuentes de agua se encienden automáticamente con diferente frecuencia: una
          \item A las 4:30 p.m. han pasado 90 minutos, pero 12 no divide a 90, luego no puede ser esta opción.        
     \end{enumerate}
 
-    Vale la pena entender lo que está detrás de este tipo de ejercicios. Veremos dos métodos que no dependen de las opciones de respuesta. Primero, veamos después de cuantos minutos se enciende cada una
-
-    \begin{center}
-    \begin{tabular}{c|cccccccccccc}
-        Fuente 1 & 5 & 10 & 15 & 20 & 25 & $\overline{30}$ & 35 & 40 & 45 & 50 & 55 & \circled{$\overline{60}$}  \\ \hline
-        Fuente 2 & 6 & $\underline{12}$ & 18 & $\underline{24}$ & $\overline{30}$ & $\underline{36}$ & 42 & $\underline{48}$ & 54 & \circled{$\overline{\underline{60}}$} & 66 & $\underline{72}$ \\ \hline
-        Fuente 3 & $\underline{12}$ & $\underline{24}$ & $\underline{36}$ & $\underline{48}$ & \circled{$\underline{60}$} & $\underline{72}$ & $\underline{84}$ & $\underline{96}$ & $\underline{108}$ & \circled{$\underline{120}$} & $\underline{132}$ & $\underline{144}$
-    \end{tabular}
-    \end{center}
-    
-    Por lo tanto, las tres vuelven a encenderse simultáneamente después de una hora, es decir, a las 4:00.
-
-    Este método es muy lento, pues necesitamos escribir todos los múltiplos de 5, de 6, de 12 hasta encontrar la primera vez que coincidían.
-
-    Vemos que cada fuente se prende cuando la cantidad de minutos transcurridos es un múltiplo del intervalo de tiempo asociado. En consecuencia, las tres fuentes coinciden cuando el número de minutos transcurridos es múltiplo de 5, de 6 y de 12 simultáneamente. Por lo tanto, lo que queremos encontrar es el mínimo común múltiplo (mcm) de estos tres valores. 
-
-    Una forma más eficiente de encontrar este mínimo común múltiplo es la siguiente. Como 5, 6 y 12 deben dividir a este mcm, sabemos que cada factor de alguno de ellos lo divide, por ejemplo el 3 (divide a 6), el 4 (divide a 12), etc. Sin embargo, como queremos que sea mínimo, si hay algún factor que divide a varios (por ejemplo, el 3 divide tanto a 6 como a 12), no queremos contarlo muchas veces. Así, podemos hacer el siguiente algoritmo: Anotamos los tres (o más) números que tenemos, y en cada paso, escogemos un factor primo de alguno de ellos, y dividimos por ese factor todos los números que podamos. Los que no podamos, los dejamos sin dividir.
-
-    \[
-    \begin{array}{ccc|l}
-        5 & 6 & 12 & \text{el 2 divide al 6 y al 12, aunque no al 5} \\
-        5 & 3 & 6  & \text{el 2 divide al 6, aunque no divide a los demás} \\
-        5 & 3 & 3  & \text{el 3 divide a sus dos apariciones, pero no al 5} \\
-        5 & 1 & 1  & \text{el 5 divide al 5} \\
-        1 & 1 & 1  & \text{ya todos quedaron en 1:} \operatorname{mcd}(5,6,12) = 2\cdot2\cdot3\cdot5 = 60
-    \end{array}
-    \]
-
-    Esto es confirmado por lo que encontramos haciendo la tabla. \hfill $\square$
+    La opción correcta es la C. \hfill $\square$
 \end{solution}
+
+Vale la pena entender lo que está detrás de este tipo de ejercicios. Veremos dos métodos que no dependen de las opciones de respuesta. Primero, veamos después de cuantos minutos se enciende cada una
+
+\begin{center}
+\begin{tabular}{c|cccccccccccc}
+    Fuente 1 & 5 & 10 & 15 & 20 & 25 & $\overline{30}$ & 35 & 40 & 45 & 50 & 55 & \circled{$\overline{60}$}  \\ \hline
+    Fuente 2 & 6 & $\underline{12}$ & 18 & $\underline{24}$ & $\overline{30}$ & $\underline{36}$ & 42 & $\underline{48}$ & 54 & \circled{$\overline{\underline{60}}$} & 66 & $\underline{72}$ \\ \hline
+    Fuente 3 & $\underline{12}$ & $\underline{24}$ & $\underline{36}$ & $\underline{48}$ & \circled{$\underline{60}$} & $\underline{72}$ & $\underline{84}$ & $\underline{96}$ & $\underline{108}$ & \circled{$\underline{120}$} & $\underline{132}$ & $\underline{144}$
+\end{tabular}
+\end{center}
+
+Por lo tanto, las tres vuelven a encenderse simultáneamente después de una hora, es decir, a las 4:00.
+
+Este método es muy lento, pues necesitamos escribir todos los múltiplos de 5, de 6, de 12 hasta encontrar la primera vez que coincidían.
+
+Vemos que cada fuente se prende cuando la cantidad de minutos transcurridos es un múltiplo del intervalo de tiempo asociado. En consecuencia, las tres fuentes coinciden cuando el número de minutos transcurridos es múltiplo de 5, de 6 y de 12 simultáneamente. Por lo tanto, lo que queremos encontrar es el mínimo común múltiplo (mcm) de estos tres valores. 
+
+Una forma más eficiente de encontrar este mínimo común múltiplo es la siguiente. Como 5, 6 y 12 deben dividir a este mcm, sabemos que cada factor de alguno de ellos lo divide, por ejemplo el 3 (divide a 6), el 4 (divide a 12), etc. Sin embargo, como queremos que sea mínimo, si hay algún factor que divide a varios (por ejemplo, el 3 divide tanto a 6 como a 12), no queremos contarlo muchas veces. Así, podemos hacer el siguiente algoritmo: Anotamos los tres (o más) números que tenemos, y en cada paso, escogemos un factor primo de alguno de ellos, y dividimos por ese factor todos los números que podamos. Los que no podamos, los dejamos sin dividir.
+
+\[
+\begin{array}{ccc|l}
+    5 & 6 & 12 & \text{el 2 divide al 6 y al 12, aunque no al 5} \\
+    5 & 3 & 6  & \text{el 2 divide al 6, aunque no divide a los demás} \\
+    5 & 3 & 3  & \text{el 3 divide a sus dos apariciones, pero no al 5} \\
+    5 & 1 & 1  & \text{el 5 divide al 5} \\
+    1 & 1 & 1  & \text{ya todos quedaron en 1:} \operatorname{mcd}(5,6,12) = 2\cdot2\cdot3\cdot5 = 60
+\end{array}
+\]
+
+Esto es confirmado por lo que encontramos haciendo la tabla.
 
 \question
 Iveth y Marta tienen igual número de monedas
@@ -128,7 +133,7 @@ Si al final Marta tiene 4 bolsitas más que Iveth,
 ¿de cuánto dinero disponía cada una? \footnote{\cite{SEMA2021}}
 \begin{choices}
     \choice 2800 gapes
-    \choice 1400 gapes
+    \CorrectChoice 1400 gapes
     \choice 700 gapes
     \choice 280 gapes
     \choice 200 gapes
@@ -138,9 +143,11 @@ Si al final Marta tiene 4 bolsitas más que Iveth,
     Podemos hacer este problema utilizando las soluciones:
     \begin{enumerate}[A.]
         \item $2800/20 = 140$, de forma que cada una tendría 140 monedas. Como Iveth pone 7 monedas en cada bolsa, al final tendría $140/7 = 20$ bolsitas. Por su parte, Marta pone 5 monedas en cada bolas, luego tendría $140/5 = 14\cdot10/5 = 14\cdot2 = 28$ bolsitas. Pero entonces Marta tendría 8 bolsitas más que Iveth, no 4.
-        \item $1400/20 = 70$ monedas cada una. Iveth por tanto tendría $70/7 = 10$ bolsas, y Marta, $70/5 = 7\cdot2 = 14$ bolsas. En este caso, Marta sí tiene 4 bolsas más que Iveth. Así la respuesta es la B.
+        \item $1400/20 = 70$ monedas cada una. Iveth por tanto tendría $70/7 = 10$ bolsas, y Marta, $70/5 = 7\cdot2 = 14$ bolsas. En este caso, Marta sí tiene 4 bolsas más que Iveth.
     \end{enumerate}
+    Las otras tres opciones se verifica de la misma forma que no satisfacen todas las condiciones del problema. La opción correcta es la B. \hfill $\square$
 
+    {\small \itshape
     Otra forma muy directa: utilizando ecuaciones. Si Iveth tiene $x$ bolsitas, María tiene $x+4$ bolsitas. Como cada bolsita de Iveth tiene 7 monedas, Iveth tendría $7x$ monedas, y como cada bolsita de María tiene 5 monedas, ella tiene $5(x+4)$ monedas. Como ambas tienen la misma cantidad de monedas, igualamos y resolvemos:
     \begin{align*}
         7x &= 5(x+4)\\
@@ -149,7 +156,7 @@ Si al final Marta tiene 4 bolsitas más que Iveth,
         2x &=20 \\
         x &= 10
     \end{align*}
-    Así Iveth tiene 10 bolsitas, luego tenía $7\cdot10 = 70$ monedas de 20 gapes (y Marta tiene 14 bolsitas, $14\cdot5 = 70$ monedas) y por tanto en total $70\cdot20 = 1400$ gapes. \hfill $\square$
+    Así Iveth tiene 10 bolsitas, luego tenía $7\cdot10 = 70$ monedas de 20 gapes (y Marta tiene 14 bolsitas, $14\cdot5 = 70$ monedas) y por tanto en total $70\cdot20 = 1400$ gapes.}
 \end{solution}
 
 \question \label{q:frijoles}
@@ -172,8 +179,9 @@ respectivamente. En cada uno se colocan sacos de frijoles del mismo peso cada sa
         \item Se los sacos pesaran 90kg, de nuevo no se puede llenar el contenedor de 150 kg, por lo que no es posible.
     \end{enumerate}
 
-    De esta forma, la opción correcta es la B.
+    De esta forma, la opción correcta es la B. \hfill $\square$
 
+    {\small \itshape
     Nuestro otro método es viendo que el peso de los sacos debe dividir el peso máximo de cada contenedor, es decir, es un divisor común de 90, de 180 y de 150, y queremos que sea el mayor. Calculando con el algoritmo:
     \[
     \begin{array}{ccc|l}
@@ -184,28 +192,28 @@ respectivamente. En cada uno se colocan sacos de frijoles del mismo peso cada sa
     \end{array}
     \]
 
-    El peso de cada saco es 30 kg.  \hfill $\square$
+    El peso de cada saco es 30 kg.}
 \end{solution}
 
-\question
-Una fábrica de una zona industrial tiene tres timbres para la realización de diferentes procesos. Uno suena cada hora y cuarto, el segundo cada hora y veinte, el tercero cada hora y media. Si los tres suenan simultáneamente a las 10 de la mañana del domingo, ¿cuándo es la próxima vez que volverá a suceder? \footnote{\cite{TEC2023}}
+\question \label{q:timbres}
+Una fábrica de una zona industrial tiene tres timbres para la realización de diferentes procesos. Uno suena cada hora y cuarto, el segundo cada hora y veinte, el tercero cada hora y media. Si los tres suenan simultáneamente a las 10 de la mañana del domingo, ¿cuándo es la próxima vez que volverá a suceder?\footnote{\cite{TEC2023}}
 \begin{choices}
     \choice A las 10 de la noche del lunes
-    \choice A las 10 de la noche del martes %%%%%%%%
+    \CorrectChoice A las 10 de la noche del martes %%%%%%%%
     \choice A las 10 de la mañana del jueves
     \choice A las 10 de la mañana del miércoles
 \end{choices}
 
-\begin{solution} \label{q:timbres}
+\begin{solution} 
     Empecemos con el método de revisar las opciones de respuesta:
     \begin{enumerate}[A.]
-        \item De las 10 a.m. del domingo a las 10 p.m. del lunes transcurren 36 horas, o $36\cdot60 = 2160$ minutos (12 de las 10 a.m. a las 10 p.m., otras 12 de las 10 p.m. a las 10 a.m. del lunes y otras 12 de las 10 a.m. a las 10 p.m.). El primer timbre suena cada hora y cuarto, es decir, cada 75 minutos. ¿Será que a los 2160 minutos suena el primer timbre? Basta ver si es divisible entre 75, pues suena en los múltiplos de 75: $2160/75 = 216\cdot10/(5\cdot15) = 216\cdot2 / 15 = 6\cdot36\cdot2/(3\cdot5) = 2\cdot36\cdot2/5$ y esta ya no se puede simplificar más. Así que 2160 no es divisible entre 75 y el primer timbre no suena en este momento. Esta opción no puede ser.
-        \item De las 10 a.m. del domingo a las 10 p.m. del martes transcurre un día más, 24 horas más, que en la opción anterior, es decir, transcurren $36+24 = 60$ horas, que son $3600$ minutos. $3600/75 = 36\cdot10\cdot10/(5\cdot5\cdot3) = 12 \cdot2\cdot2 = 48$, luego 75 sí divide 3600 y el primer timbre sí suena a esta hora. El segundo suena cada hora y veinte, i.e. cada 80 minutos, y $3600/80 = 45$ así que sí suena a las 10 p.m. del martes. Y como el tercero suena cada 90 minutos y $3600$ es divisible entre 90 (360 es divisible entre 9 pues la suma de sus dígitos $3+6+0=9$ es divisible entre 9, esta es una regla de divisibilidad del 9), entonces el tercero también suena a esta hora. Por tanto, los tres timbres suenan simultáneamente a las 10 p.m., y como el resto de las opciones ocurren después, concluimos que la B. es la opción correcta.
+        \item De las 10 a.m. del domingo a las 10 p.m. del lunes transcurren 36 horas, o $36\cdot60 = 2160$ minutos. El primer timbre suena cada hora y cuarto, es decir, cada 75 minutos. ¿Será que a los 2160 minutos suena el primer timbre? Basta ver si es divisible entre 75, pues suena en los múltiplos de 75: $2160/75 = 2160\cdot2/150 = 216\cdot2 / 15 = 144/5$ pero 5 no divide 144. Así 2160 no es divisible entre 75 y el primer timbre no suena en este momento. Esta opción no puede ser.
+        \item De las 10 a.m. del domingo a las 10 p.m. del martes transcurren $60$ horas, que son $3600$ minutos. $3600/75 = 36\cdot10\cdot10/(5\cdot5\cdot3) = 12 \cdot2\cdot2 = 48$, luego 75 sí divide 3600 y el primer timbre sí suena a esta hora. El segundo suena cada hora y veinte, i.e. cada 80 minutos, y $3600/80 = 45$ así que sí suena a las 10 p.m. del martes. Y como el tercero suena cada 90 minutos y $3600$ es divisible entre 90 (360 es divisible entre 9 pues la suma de sus dígitos $3+6+0=9$ es divisible entre 9, esta es una regla de divisibilidad del 9), entonces el tercero también suena a esta hora. Por tanto, los tres timbres suenan simultáneamente a las 10 p.m., y como el resto de las opciones ocurren después, concluimos que la B. es la opción correcta.
     \end{enumerate}
 
     Vemos que en este caso el análisis de las respuestas es bastante engorroso, pues hay que ir una por una y son cálculos en los que podemos equivocarnos con facilidad.
 
-    Podemos utilizar otro método, el tercer que usamos en el ejercicio \ref{q:fuentes}, para calcular el mínimo común múltiplo de $75, 80$ y $90$, los intervalos de tiempo en minutos en los que suena cada timbre:
+    Podemos utilizar otro método, el tercero que usamos en el ejercicio \ref{q:fuentes}, para calcular el mínimo común múltiplo de $75, 80$ y $90$, los intervalos de tiempo en minutos en los que suena cada timbre:
 
     \[
     \begin{array}{ccc|l}
@@ -236,9 +244,10 @@ Tres campanas suenan cada cierto tiempo: la primera cada $10$ minutos, la segund
 \begin{solution}
     Vamos a calcular el mínimo común múĺtiplo de 10, 15 y 18 de una forma un poco distinta, para ver otro método. Es perfectamente válido utilizar los otros métodos que hemos visto anteriormente, como en \ref{q:fuentes} y en \ref{q:timbres}.
 
-    Factoricemos cada número en primos: $10 = 2\cdot5$, $15 = 3\cdot5$ y $18 = 2 \cdot 9 = 2\cdot 3^2$. El mínimo común múltiplo, para que sea divisible entre estos 3, debe tener en su factorización prima un $2$, un $5$ y un $3^2$ para poder cancelarlos al dividir entre 10, 15 o entre 18. Por lo tanto, $\operatorname{mcm}(10, 15, 18) = 2\cdot3^2\cdot5 = 10 \cdot 9 = 90$. Así, las campanas sonarán de nuevo en 1 hora y media, es decir, a la 1:30 p.m. La respuesta correcta es la D.
+    Factoricemos cada número en primos: $10 = 2\cdot5$, $15 = 3\cdot5$ y $18 = 2 \cdot 9 = 2\cdot 3^2$. El mínimo común múltiplo, para que sea divisible entre estos 3, debe tener en su factorización prima un $2$, un $5$ y un $3^2$ para poder cancelarlos al dividir entre 10, 15 o entre 18. Por lo tanto, $\operatorname{mcm}(10, 15, 18) = 2\cdot3^2\cdot5 = 10 \cdot 9 = 90$. Así, las campanas sonarán de nuevo en 1 hora y media, es decir, a la 1:30 p.m. La respuesta correcta es la D. \hfill $\square$
 
-    Resumiendo el método recién visto, lo que hacemos es expresar cada número en su factorización prima y para encontrar el $\operatorname{mcm}$ se utilizan todos los primos de las descomposiciones, y cada uno se eleva a la mayor potencia con la que apareció. En este caso, como $10 = 2\cdot5$, $15 = 3\cdot 5$ y $18 = 2 \cdot 3^2$, el $\operatorname{mcm}$ tiene que tener a 2, 5 y a 3 en su factorización. Además, basta con $2^1$, con $5^1$ pues no salen con exponentes mayores. Pero el 3 va elevado a la 2 pues en la factorización de 18 sale $3^2$ y es la mayor potencia que toma entre las distintas factorizaciones. Por eso pudimos concluir que el $\operatorname {mcm}$ debía de ser $2\cdot3^2\cdot5$. \hfill $\square$
+    {\small \itshape
+    Resumiendo el método recién visto, lo que hacemos es expresar cada número en su factorización prima y para encontrar el $\operatorname{mcm}$ se utilizan todos los primos de las descomposiciones, y cada uno se eleva a la mayor potencia con la que apareció. En este caso, como $10 = 2\cdot5$, $15 = 3\cdot 5$ y $18 = 2 \cdot 3^2$, el $\operatorname{mcm}$ tiene que tener a 2, 5 y a 3 en su factorización. Además, basta con $2^1$, con $5^1$ pues no salen con exponentes mayores. Pero el 3 va elevado a la 2 pues en la factorización de 18 sale $3^2$ y es la mayor potencia que toma entre las distintas factorizaciones. Por eso pudimos concluir que el $\operatorname {mcm}$ debía de ser $2\cdot3^2\cdot5$.}
 \end{solution}
 
 
@@ -255,8 +264,9 @@ Tres autobuses salen de una terminal al mismo tiempo. Uno regresa cada 20 minuto
 \begin{solution}
     Note que $\operatorname{mcm}(20, 30, 50) = 10\cdot\operatorname{mcd}(2, 3, 5) = 10\cdot2\cdot3\cdot5= 10\cdot10\cdot3 = 300$. Aquí sacamos primero el 10, que es un divisor común de todos y notamos luego que el 2 el 3 y el 5 son primos, luego no tienen en común nada. Es decir, que para que algo sea divisible entre estos tres números, tiene que ser divisible entre $2\cdot3\cdot 5=30$. Es decir, para que algo sea divisible entre 20, 30 y 50, tiene que ser divisible entre 10, y luego, lo que queda al dividir entre 10 tiene que ser múltiplo de 2, 3 y de 5, es decir, de 30. Por lo tanto $\operatorname{mcd(20, 30 , 50) = 30\cdot10 = 300}$.
 
-    Convertimos 300 minutos en horas, $300/60 = 5$ horas. De esta forma la opción correcta es la C.
+    Convertimos 300 minutos en horas, $300/60 = 5$ horas. De esta forma la opción correcta es la C. \hfill $\square$
 
+    {\small \itshape
     Por completitud, comparemos con el método de la \ref{q:campanas}:
     \[\begin{array}{ccc|l}
         20 & 30 & 50 & 2 \\
@@ -265,7 +275,7 @@ Tres autobuses salen de una terminal al mismo tiempo. Uno regresa cada 20 minuto
         1  & 3  & 5  & 3 \\
         1  & 1  & 5  & 5 \\
         1  & 1  & 1  &\operatorname{mcm}(20, 30, 50)= 2\cdot5\cdot2\cdot3\cdot5 = 10\cdot30 = 300
-    \end{array}\] \hfill $\square$
+    \end{array}\]}
 \end{solution}
 
 \question
@@ -291,7 +301,7 @@ Un profesor tiene 72 marcadores, 90 lápices y 108 bolígrafos. Desea repartirlo
     \]
     Luego, para que un número divida a estos tres, su en su factorización prima el exponente de cada factor debe ser menor o igual que en las descomposiciones anterior. Por ejemplo, 5 no puede dividir a un factor común de 72, 90 y de 108, pues no divide ni a 72 ni a 108. Otro ejemplo, $3^2$ sí divide a todos, pero $3^3$ no, porque aunque divide a 108, no divide a $90=2\cdot5\cdot3^2$, ya que el exponente en 3 es menor en 90 que en $3^3$.
 
-    Así, una forma de encontrar el $\operatorname{mcd}$ es tomar todos los primos que están presentes en \textit{todas} las descomposiciones primas, y elevarlos al menor exponente que encontremos en estas factorizaciones. De esta forma, sabemos que divide a todos y que no puede ser más grande pues dejaría de dividir alguno de los números. Así, 2 y 3 son los primos que están en todas las factorizaciones. La menor potencia de 2 que sale es $2$, en el 90, y la menor que sale para 3 es $3^2$, tanto en 72 como en 90. Así, $\operatorname{mcd}(72, 90, 108) = 2\cdot 3^2 = 18$. La mayor cantidad de paquetes que podemos hacer es 18. Cada paquete tiene $72/18=\frac{2^3\cdot3^2}{2\cdot3^2} = 2^2 = 4$ marcadores, $90/18 = \frac{2\cdot5\cdot3^2}{2\cdot3^2} = 5$ lápices y $108/18 = \frac{2^2\cdot3^3}{2\cdot3^2}$ = $2\cdot 3 =6$ bolígrafos. \hfill $\square$
+    Así, una forma de encontrar el $\operatorname{mcd}$ es tomar todos los primos que están presentes en \textit{todas} las descomposiciones primas, y elevarlos al menor exponente que encontremos en estas factorizaciones. De esta forma, sabemos que divide a todos y que no puede ser más grande pues dejaría de dividir alguno de los números. Así, 2 y 3 son los primos que están en todas las factorizaciones. La menor potencia de 2 que sale es $2$, en el 90, y la menor que sale para 3 es $3^2$, tanto en 72 como en 90. Así, $\operatorname{mcd}(72, 90, 108) = 2\cdot 3^2 = 18$. La mayor cantidad de paquetes que podemos hacer es 18, de forma que la opción correcta es la D. \hfill $\square$
 \end{solution}
 
 \question La compañía ABC tiene un letrero cuyas letras parpadean (se encienden y se apagan) cada cierto tiempo. Sin embargo, por una falla dejaron de sincronizarse, y ahora la A parpadea cada 4 segundos, la B parpadea cada 7, y la C parpadea cada 6 segundos. Si en un momento de la noche las tres parpadearon al mismo tiempo, ¿cuál es la menor cantidad de segundos que deben pasar antes de que vuelvan a prenderse a la vez?
@@ -311,16 +321,17 @@ Un profesor tiene 72 marcadores, 90 lápices y 108 bolígrafos. Desea repartirlo
 Carlos tiene una cantidad entera de canicas. Si las agrupa de 4 en 4 sobran 3, si las agrupa de 5 en 5 sobran 4, y si las agrupa de 6 en 6 sobran 5. ¿Cuál es el menor número posible de canicas que puede tener Carlos?
 
 \begin{choices}
-    \choice 59
+    \CorrectChoice 59
     \choice 119
     \choice 123
     \choice 239
 \end{choices}
 
 \begin{solution}
-    Veamos las opciones. Si agrupamos 59 canicas de 4 en 4, haciendo la división larga obtenemos $59 = 4\cdot14 + 3$ así que nos sobran 3. Si las agrupamos de 5 en 5, $59 = 5\cdot 11 + 4$ y sí sobran 4. Y si lo hacemos de 6 en 6, $59 = 6\cdot 9 + 5$ y sí sobran 5. De forma que la opción 59 es factible. Como nos piden el menor número posible de canicas, 59 es la menor entre las opciones y ya comprobamos que sirve, esta debe ser la opción correcta.
+    Veamos las opciones. Si agrupamos 59 canicas de 4 en 4, haciendo la división larga obtenemos $59 = 4\cdot14 + 3$ así que nos sobran 3. Si las agrupamos de 5 en 5, $59 = 5\cdot 11 + 4$ y sí sobran 4. Y si lo hacemos de 6 en 6, $59 = 6\cdot 9 + 5$ y sí sobran 5. De forma que la opción 59 es factible. Como nos piden el menor número posible de canicas, 59 es la menor entre las opciones y ya comprobamos que sirve, esta debe ser la opción correcta. \hfill $\square$
 
-    Si quisiéramos resolver este problema lógicamente, hay un pequeño truco que lo simplifica. Si agregamos una canica más, vemos que ahora podemos agrupar de 4 en 4 sin que sobre nada, pues con las que sobraban se forma un nuevo grupo de 4. Igual si agrupamos de 5 en 5 o de 6 en 6, pues en cada caso solo falta una para formar un grupo más. Por tanto, si $n$ es la cantidad de canicas, $n+1$ es un múltiplo común de 4, de 5 y de 6. Como nos piden que $n$ sea lo menor posible, $n+1$ debe ser el mínimo común múltiplo. Calculándolo obtenemos 60. Así $n = 59$. \hfill $\square$
+    {\small \itshape
+    Si quisiéramos resolver este problema lógicamente, hay un pequeño truco que lo simplifica. Si agregamos una canica más, vemos que ahora podemos agrupar de 4 en 4 sin que sobre nada, pues con las que sobraban se forma un nuevo grupo de 4. Igual si agrupamos de 5 en 5 o de 6 en 6, pues en cada caso solo falta una para formar un grupo más. Por tanto, si $n$ es la cantidad de canicas, $n+1$ es un múltiplo común de 4, de 5 y de 6. Como nos piden que $n$ sea lo menor posible, $n+1$ debe ser el mínimo común múltiplo. Calculándolo obtenemos 60. Así $n = 59$.}
 \end{solution}
 
 \question Xochilt tiene 24 mangos, 40 piñas y 56 manzanas, y quiere formar la mayor cantidad de paquetes con fruta de forma que todos los paquetes sean iguales y que no quede fruta sobrante. Con certeza, cada paquete contiene
@@ -371,25 +382,36 @@ Una impresora antigua imprime 80 hojas por hora, mientras que una impresora nuev
     Por lo que han impreso la misma cantidad de hojas ($4\cdot100 = 400 = 5\cdot80$) a la 1:00 p.m., cuatro horas después de las 9 p.m. \hfill $\square$
 \end{solution}
 
-\question Analice las siguientes proposiciones:
-\begin{enumerate}[I.]
-    \item Si un número natural es un cuadrado perfecto entonces tiene exactamente 3 divisores.
-    \item Si un número natural tiene exactamente tres divisores positivos entonces es un cuadrado perfecto. \footnote{\cite{OLCOMAN1-2021}}
-\end{enumerate}
+% \question Analice las siguientes proposiciones:
+% \begin{enumerate}[I.]
+%     \item Si un número natural es un cuadrado perfecto entonces tiene exactamente 3 divisores.
+%     \item Si un número natural tiene exactamente tres divisores positivos entonces es un cuadrado perfecto. \footnote{\cite{OLCOMAN1-2021}}
+% \end{enumerate}
 
-De ellas son verdaderas
-\begin{choices}
-    \choice Solamente I
-    \choice Solamente II
-    \choice I y II
-    \choice Ninguna
-\end{choices}
+% De ellas son verdaderas
+% \begin{choices}
+%     \choice Solamente I
+%     \choice Solamente II
+%     \choice I y II
+%     \choice Ninguna
+% \end{choices}
 
 \question Si el sucesor del producto de dos números primos distintos es un número primo entonces se puede asegurar con certeza que la suma de esos dos números primos es un número\footnote{Modificado de \cite{OLCOMAN1-2021}}
 \begin{choices}
     \choice par
     \choice primo
-    \choice impar
+    \CorrectChoice impar
     \choice compuesto
 \end{choices}
+
+\begin{solution}
+    Lo pensamos en reversa. Tenemos un primo $p$ que es el sucesor de un producto de dos primos distintos $q$ y $r$: $p=qr+1$. Claramente como $q$ y $r$ son primos distintos, lo menor que podrían ser es $q=2$, $r=3$, y así el menor valor posible para $p$ es $p = 2\cdot3 +1 = 7$ que sí es primo. 
+
+    Note que en este caso particular la suma de los dos primos es $q+r = 2+3 = 5$, que es impar y primo. Esto descarta las opciones A. y D.
+
+    Como $p\geq 7$, $p$ no es 2 y por tanto es un primo impar. Como $p=qr+1$, entonces $qr$ dene ser par. Pero entonces 2 divide a $q$ o 2 divide a $r$. Es decir, $q$ o $r$ debe ser 2, y el otro, por ser un primo distinto, debe ser impar. La suma de ambos es la suma de un par, 2, con un impar, que da un resultado impar. Así, en cualquier caso la suma $q+r$ da un un número impar. De esta forma la opción correcta es la C. \hfill $\square$
+
+    {\small \itshape
+    Ver que la suma no necesariamente es primo no es tan sencillo, pero un ejemplo pequeño es con $q=2$ y $r=23$. Aquí $p = 47$, que es primo, pero $q+r = 25$ que es impar pero no es primo.}
+\end{solution}
 \end{questions}

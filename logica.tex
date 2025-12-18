@@ -80,10 +80,12 @@ De las premisas anteriores se sigue que \footnote{\cite{TEC2023}}
         \item Esta es la correcta. Ver el comentario a A.
         \item Ver comentario a B.
     \end{enumerate}
+    \hfill $\square$
 
+    {\small \itshape
     Esta puede ser una buena ocación para introducir el concepto de contrapositiva. Si tenemos una premisa de la forma ``Si P entonces Q,'' y sabemos que Q no es cierto, entonces podemos concluir que P no es cierto. Es decir, las afirmaciones ``Si P entonces Q'' y ``Si Q no es cierto entonces Q no es cierto'' son equivalentes.
 
-    En este ejercicio, ¿cuál es la contrapositiva de i)? ``Si no es cierto que L dibuje ni que J salte, entonces V no lee''. O, escribiendola mejor ``Si L no dibuja y J no salta entonces V no lee''. Y entonces queda muy claro que por la iii) como L no dibuja y J no salta, entonces necesariamente V no lee. \hfill $\square$
+    En este ejercicio, ¿cuál es la contrapositiva de i)? ``Si no es cierto que L dibuje ni que J salte, entonces V no lee''. O, escribiendola mejor ``Si L no dibuja y J no salta entonces V no lee''. Y entonces queda muy claro que por la iii) como L no dibuja y J no salta, entonces necesariamente V no lee.}
 \end{solution}
 
 \question Considere las siguientes afirmaciones:
@@ -111,9 +113,7 @@ Si las afirmaciones anteriores son verdaderas, se concluye con certeza que
     \end{enumerate}
     Entonces vemos claro que como C sí es cierto (Carlos si fue a clases), entonces A no es cierto por la contrapositiva de ii) (de nuevo, si Alejandro estuviera en el parque, entonces Carlos no fue a clases, pero Carlos sí fue a clases). La i) no nos dice mucho, pues si L es cierto (que Luciana se pegó la lotería) entonces no es cierto que A, que ya lo sabemos, y si L no fuera cierto, de nuevo, podría pasar cualquier cosa, que A esté en el parque o no. 
 
-    Por esto, lo que sabemos con certeza es que Carlos fue a clases y que Alejandro no está en el parque. Así, la opción C. es la correcta.
-
-    Note que algunas de las opciones se pueden descartar muy fácilmente, como que Luciana es la madre de Alejandro (no se dice nada de parentezco), que Carlos está en la universidad (solo nos hablan de clases, podría ser en la escuela), y para las otras tres sí hay que ir descartando usando las premisas. \hfill $\square$
+    Por esto, lo que sabemos con certeza es que Carlos fue a clases y que Alejandro no está en el parque. Así, la opción C. es la correcta. \hfill $\square$
 \end{solution}
 
 \question Gabriel, Elena, Ignacio y Susana se reunieron para realizar una carrera de velocidad. Al final de la carrera sucedió que: 
@@ -207,7 +207,8 @@ De acuerdo con los aspectos anteriores, ¿qué se puede concluir, con certeza? \
         \item ¿Todos pueden practicar ciclismo? De nuevo: no saben andar en bici.
         \item ¿Todos pueden practicar natación, pero no ciclismo? La premisa I. nos dice que a todos les gusta mojarse y la II. que todos pueden mantenerse a flote en el agua. Por tanto, todos pueden practicar natación. Al mismo tiempo, la I. nos dice que no saben andar en bicicleta, por lo que no pueden practicar ciclismo. Por lo tanto, esta es correcta.
         \item ¿Algunos pueden practicar boxeo y todos pueden practicar natación? Es cierto que todos puede praticar natación. Pero la II. nos dice que no les gusta el contacto físico, por lo que no les gustaría el boxeo. Así, esta no puede ser.
-    \end{enumerate} \hfill $\square$
+    \end{enumerate} 
+    La opción correcta es la C. \hfill $\square$
 \end{solution}
 
 \question Luis es hijo de la madre de Marta. Marta es la abuela materna de la hija de Ana. Si Luis tiene un hijo llamado Pedro. ¿Qué relación tiene Pedro con el hermano de Ana?
@@ -222,11 +223,13 @@ De acuerdo con los aspectos anteriores, ¿qué se puede concluir, con certeza? \
 \begin{solution}
     Empecemos por la pregunta y vayamos paso a paso. ¿Qué relación tiene Pedro con el hermano de Ana? Pedro es el hijo de Luis, y Ana tiene una hija cuya abuela materna es Marta. Como Ana es la mamá de su hija, Marta, siendo abuela materna, es la mamá de Ana. Para conectarlos, vemos que Luis es hijo de la madre de Marta. Por lo tanto, Marta y Luis comparten mamá, es decir, son hermanos. Así, tenemos el siguiente diagrama:
     
-    \begin{tikzcd}
-        & \text{Marta} \ar[ld] \ar[rd] \ar[rdd, "\text{abuela materna}"'] \ar[rrd] & \\
-        \text{Luis} \ar[d] & & \text{Ana} \ar[d] & \text{Hermano de Ana} \\
-        \text{Pedro} & & \text{Hija de Ana}
-    \end{tikzcd}
+    \begin{center}
+        \begin{tikzcd}[column sep=0.5em, row sep = 4ex]
+            & \text{Marta} \ar[ld] \ar[rd] \ar[rdd, sloped, "\text{abuela}","\text{materna}"'] \ar[rrd] & \\
+            \text{Luis} \ar[d] & & \text{Ana} \ar[d] & \text{Hermano de Ana} \\
+            \text{Pedro} & & \text{Hija de Ana}
+        \end{tikzcd}
+    \end{center}
 
     Note por tanto que el hermano de Ana debe ser también hijo de Marta y por tanto hermano de Luis. Como Pedro es hijo de Luis, el hermano de Ana (que es hermano de Luis) debe ser tío de Pedro. \hfill $\square$
 \end{solution}
@@ -247,8 +250,9 @@ Respecto a la ubicación de los objetos, ¿cuál de las siguientes opciones, con
         \item Veamos que podemos poner las pinturas en paredes contiguas sin problema, y un televisor en alguna de las otras paredes, por lo que no es necesario que las pinturas estén en paredes opuestas.
         \item Igual que en la anterior, también es posible que las pinturas estén en paredes opuestas, por lo que no es necesario --- no se sabe con certeza --- que las pinturas estén en paredes contiguas.
         \item El televisor está en una pared opuesta a la pared vacía. Tampoco es necesario. Podemos poner el televisor opuesto a una pintura y por tanto estará contiguo a la pared vacía, que debe ser una de las dos que quedan.
-        \item Por último, intentemos hacer que ninguna pintura esté en una pared contigua a la pared vacía, y veamos que no es posible: si una pintura no está contigua a la pared vacía, solo es posible que esté opuesta a esta pared (solo hay cuatro paredes, una será la vacía, otras dos serán contiguas a esta vacía y una será opuesta). ¡Pero tenemos dos pinturas, y solo una pared opuesta a la pared vacía! No podemos poner ambas pinturas en la misma pared. Por lo tanto, aunque pongamos una pintura opuesta a la pared vacía, la otra tendrá que estar contigua a la pared vacía. De esta forma, sabemos con certeza que una pintura está en una pared contigua a la pared vacía. La opción correcta es la D.
-    \end{enumerate} \hfill $\square$
+        \item Por último, intentemos hacer que ninguna pintura esté en una pared contigua a la pared vacía, y veamos que no es posible: si una pintura no está contigua a la pared vacía, solo es posible que esté opuesta a esta pared (solo hay cuatro paredes, una será la vacía, otras dos serán contiguas a esta vacía y una será opuesta). ¡Pero tenemos dos pinturas, y solo una pared opuesta a la pared vacía! No podemos poner ambas pinturas en la misma pared. Por lo tanto, aunque pongamos una pintura opuesta a la pared vacía, la otra tendrá que estar contigua a la pared vacía. De esta forma, sabemos con certeza que una pintura está en una pared contigua a la pared vacía. 
+    \end{enumerate} 
+    La opción correcta es la D. \hfill $\square$
 \end{solution}
 
 
@@ -426,10 +430,12 @@ guanacaste y un cenízaro.
         \item ¿Podrán dividirse los guanacastes y los almendros de forma que ningún estudiante siembre uno de cada uno? Podemos pedir a 5 estudiantes que cada uno siembre 2 almendros. Como hay 10 almendros, ya todos quedan sembrados y ninguno de los estudiantes que sembró un almendro sembrará un guanacaste pues ya sembró sus dos árboles. Por lo tanto, no sabemos con certeza que algún estudiantes sembrará un guanacaste y un almendro.
         \item De la misma forma que en la anterior, si pedimos a 15 estudiantes que siembren 2 guanacastes cada uno y al número 16 le pedimos que siembre un guanacaste y un almendro, tenemos que quedan sembrados todos los guanacastes, pero ninguno de los estudiantes que sembró uno sembró también un cenízaro. Por lo tanto, no sabemos con certeza que algún estudiantes vaya a sembrar un guanacaste y un cenízaro.
     \end{enumerate}
-
+    La opción correcta es la B. \hfill $\square$
+    
+    {\small \itshape
     Este es un ejemplo de lo que llamamos el principio del palomar, un principio aparentemente obvio pero que tiene implicaciones muy importantes en las matemáticas: ``Si tenemos $n+1$ pájaros que van a dormir en $n$ palomares (casitas de pájaros), al menos un palomar terminará con 2 pájaros o más.'' 
 
-    En nuestro caso, los guanacastes eran como las palomas, que van a ser sembrados por un estudiante, y los estudiantes como los palomares. Como hay más guanacastes que estudiantes, al menos un estudiante siembra dos guanacastes.     \hfill $\square$
+    En nuestro caso, los guanacastes eran como las palomas, que van a ser sembrados por un estudiante, y los estudiantes como los palomares. Como hay más guanacastes que estudiantes, al menos un estudiante siembra dos guanacastes.}
 \end{solution}
 
 \question
@@ -448,8 +454,9 @@ En una empresa, la sala A tiene únicamente hombres, mientras que la sala B tien
         \item No necesariamente. Sabemos que la sala B tiene varios hombres. Si en particular tuviera más de 10 hombres, y las 10 personas que se transfieren de la B a la A son hombres, entonces la sala A seguiría teniendo solo hombres.
         \item Tampoco es necesario. La sala B tiene 20 mujeres y varios hombres. Si las 10 personas que se transfieren son mujeres, ``varios hombres'' siguen estando en la sala B.
         \item Podría ser que la sala A tuviera solo uno o dos hombres y nadie más. Luego si se transfieren 10 mujeres de la B a la A, la sala A tendría más mujeres que hombres.
-        \item Para que quedaran menos de 10 mujeres en la sala B, considerando que esta inicia con 20 mujeres, sería necesario que al menos 11 de estas se pasen a la sala A. Pero esto no ocurre pues sabemos que son 10 las personas que se transfieren de B a A. Por lo tanto, necesariamente quedarán al menos 10 mujeres en la sala B. La opción correcta es la D.
-    \end{enumerate} \hfill $\square$
+        \item Para que quedaran menos de 10 mujeres en la sala B, considerando que esta inicia con 20 mujeres, sería necesario que al menos 11 de estas se pasen a la sala A. Pero esto no ocurre pues sabemos que son 10 las personas que se transfieren de B a A. Por lo tanto, necesariamente quedarán al menos 10 mujeres en la sala B. 
+    \end{enumerate} 
+    La opción correcta es la D. \hfill $\square$
 \end{solution}
 
 \question Para una fiesta hay tazas verdes, tazas
@@ -473,11 +480,12 @@ Según la información anterior, con certeza,
     Utilizamos el mismo método que antes:
     \begin{enumerate}[A.]
         \item Sabemos que hay tantas blancas como verdes y amarillas juntas. Por lo tanto, las blancas corresponden a la mitad de las tazas. Si las verdes fueran menos que las amarillas, al ser también menos que las blancas, representan menos de la tercera parte de las tazas. Como en la fiesta se utilizan dos terceras partes, podríamos usar solo blancas y amarillas, y que las verdes entren dentro de esa tercera parte que no se usó.
-        \item Si las tazas blancas no se usan, como representan la mitad de las tazas, necesariamente como máximo se pudo haber utilizado la otra mitad de las tazas. Pero nos dicen que se utilizaron las dos terceras partes de las tazas, una fracción mayor a la mitad. Así, no es posible que se utilizaran solo verdes y amarillas, pues representan la mitad de las tazas y se usaron más de la mitad. Así, con certeza algunas tazas blancas fueron utilizadas. Esta es la opción correcta
+        \item Si las tazas blancas no se usan, como representan la mitad de las tazas, necesariamente como máximo se pudo haber utilizado la otra mitad de las tazas. Pero nos dicen que se utilizaron las dos terceras partes de las tazas, una fracción mayor a la mitad. Así, no es posible que se utilizaran solo verdes y amarillas, pues representan la mitad de las tazas y se usaron más de la mitad. Así, con certeza algunas tazas blancas fueron utilizadas. Esta es la opción correcta.
         \item Similar al caso de las tazas verdes, si las amarillas fueran menos que las verdes, podemos escoger que nuestros dos tercios de tazas usadas correspondan únicamente a tazas blancas y verdes.
         \item Como en el análisis de la A., podemos incluso ver que no es necesario que se utilizen tazas verdes del todo.
         \item Si utilizamos todas las tazas verdes y todas las amarillas y llenamos el resto con blancas, no vamos a necesitar todas las blancas (pues si no estaríamos usando todas las tazas, y esto no pasa). Así, es posible que no usemos todas la blancas.
-    \end{enumerate} \hfill $\square$
+    \end{enumerate} 
+    La opción correcta es la B. \hfill $\square$
 \end{solution}
 
 \question En una habitación con tragaluces hay 4 cables paralelos, y en cada uno caben a lo sumo 8 camisas. Al tender la ropa, cada camisa debe estar sostenida por al menos 2 prensas en el mismo cable (no puede guindar de dos cables distintos), y cada prensa puede sostener a lo sumo dos camisas. Marco debe tender 20 camisas. ¿Cuál es el mínimo número de prensas que debe utilizar para tenderlas?
@@ -489,9 +497,9 @@ Según la información anterior, con certeza,
 \end{choices}
 
 \begin{solution}
-    Imagine que guindamos 4 camisas en un cable. Cada una necesita dos prensas pero entre dos de ellas pueden compartir una prensa. Para usar la menor cantidad de prensas, lo ideal es que cada prensa agarre dos camisas. Todas pueden hacer esto excepto las de los extremos. Esto nos permite ver que para guindar cuatro camisas, la menor cantidad de prensas que requerimos es de 5, pues ocupamos: pcpcpcpcp donde p es prensa y c es camisa. En general note que vamos a necesitar una prensa más que la cantidad de camisas que estamos guindando en un mismo cable (cada camisa requiere una prensa, pero necesitamos una última para utilizar dos en la última camisa que guindemos. Por lo tanto, como tenemos 20 camisas y en cada cable caben a lo sumo 8, vamos a necesitar usar tres o cuatro cables. En general, note que estamos usando una prensa por camisa, es decir 20 prensas, y necesitamos una más por cada cable que estemos utilizando. Como la menor cantidad de cables que necesitamos es 3, entonces necesitamos utilizar como mínimo 23 prensas.
-
-     \hfill $\square$
+    Imagine que guindamos 4 camisas en un cable. Cada una necesita dos prensas pero entre dos de ellas pueden compartir una prensa. Para usar la menor cantidad de prensas, lo ideal es que cada prensa agarre dos camisas. Todas pueden hacerlo excepto las de los extremos. Por ejemplo, para guindar cuatro camisas, la menor cantidad de prensas que requerimos es de 5, pues ocupamos: pcpcpcpcp donde p es prensa y c es camisa. 
+    
+    En general, note que vamos a necesitar una prensa más que la cantidad de camisas que estamos guindando en un mismo cable (cada camisa requiere una prensa, pero necesitamos una última para utilizar dos en la última camisa que guindemos. Por lo tanto, como tenemos 20 camisas y en cada cable caben a lo sumo 8, vamos a necesitar usar tres o cuatro cables. En general, note que estamos usando una prensa por camisa, es decir 20 prensas, y necesitamos una más por cada cable que estemos utilizando. Como la menor cantidad de cables que necesitamos es 3, entonces necesitamos utilizar como mínimo 23 prensas. \hfill $\square$
 \end{solution}
 
 \question
